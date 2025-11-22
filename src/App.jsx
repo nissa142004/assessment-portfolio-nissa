@@ -31,6 +31,7 @@ export default function AssessmentPortfolio() {
   );
 
   const [active, setActive] = useState("ch1");
+  const [navOpen, setNavOpen] = useState(true); // collapsible nav
   const sectionRefs = useRef({});
 
   useEffect(() => {
@@ -53,11 +54,11 @@ export default function AssessmentPortfolio() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
-      {/* 🌟 TOP NAVIGATION BAR + HORIZONTAL CHAPTER BAR */}
+      {/* 🌟 TOP NAVIGATION BAR + COLLAPSIBLE CHAPTER BAR */}
       <header className="sticky top-0 z-40 bg-slate-950/30 backdrop-blur-2xl">
         {/* full-width container */}
-        <div className="w-full px-3 md:px-6 py-2 flex flex-col gap-2">
-          {/* Brand + small summary */}
+        <div className="w-full px-3 md:px-6 pt-2 pb-1 flex flex-col gap-2">
+          {/* Brand + small summary + chapter counter */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 via-cyan-400 to-sky-500 flex items-center justify-center text-xs font-bold text-slate-950 shadow-md shadow-emerald-400/40">
@@ -68,43 +69,69 @@ export default function AssessmentPortfolio() {
                   Assessment Portfolio – PS Module
                 </h1>
                 <p className="text-[10px] md:text-xs text-slate-300">
-                  Scroll through each chapter to see your learnings, reflections and activities.
+                  Scroll through each chapter to see  learnings, reflections and activities.
                 </p>
               </div>
             </div>
 
-            <div className="hidden sm:flex flex-col items-end text-[10px] md:text-xs text-slate-300">
-              <span className="font-semibold text-emerald-300">
-                {chapters.findIndex((c) => c.id === active) + 1} / {chapters.length}
-              </span>
-              <span>Active chapter</span>
+            <div className="flex items-center gap-3">
+              <div className="hidden sm:flex flex-col items-end text-[10px] md:text-xs text-slate-300">
+                <span className="font-semibold text-emerald-300">
+                  {chapters.findIndex((c) => c.id === active) + 1} / {chapters.length}
+                </span>
+                <span>Active chapter</span>
+              </div>
+
+              {/* Collapse toggle */}
+              <button
+                onClick={() => setNavOpen((o) => !o)}
+                className="inline-flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-[11px] font-medium text-slate-100 hover:border-emerald-400 hover:text-emerald-200 hover:bg-slate-900/90 transition-all"
+              >
+                <span>Chapters</span>
+                <span
+                  className={
+                    "transition-transform duration-200 text-xs " +
+                    (navOpen ? "rotate-180" : "")
+                  }
+                >
+                  ▲
+                </span>
+              </button>
             </div>
           </div>
 
-          {/* full-width “glass” chapter bar touching both edges */}
-          <nav className="nav-scroll w-full mt-2 flex items-center gap-2 overflow-x-auto px-2 py-1.5 bg-slate-900/55 border-y border-slate-800/80 backdrop-blur-2xl shadow-xl shadow-black/40 ring-1 ring-emerald-400/10">
-            {chapters.map((c, idx) => (
-              <button
-                key={c.id}
-                onClick={() => scrollTo(c.id)}
-                className={
-                  "snap-start flex items-center gap-1.5 px-3 md:px-4 py-1.5 rounded-full text-[11px] md:text-xs font-medium border transition-all whitespace-nowrap " +
-                  (active === c.id
-                    ? "bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 border-transparent shadow-md shadow-emerald-400/50 scale-[1.02]"
-                    : "bg-white/5 text-slate-200 border-slate-700/70 hover:bg-white/10 hover:border-emerald-400/70 hover:text-emerald-200 hover:shadow-sm")
-                }
-              >
-                <span className="text-[10px] opacity-80">Ch {idx + 1}</span>
-                <span className="hidden sm:inline line-clamp-1 max-w-[160px]">
-                  {c.title}
-                </span>
-              </button>
-            ))}
-          </nav>
+          {/* Collapsible container */}
+          <div
+            className={
+              "overflow-hidden transition-[max-height] duration-300 " +
+              (navOpen ? "max-h-16 md:max-h-20 mt-2" : "max-h-0")
+            }
+          >
+            {/* full-width “glass” chapter bar */}
+            <nav className="nav-scroll w-full flex items-center gap-2 overflow-x-auto px-2 py-1.5 bg-slate-900/55 border-y border-slate-800/80 backdrop-blur-2xl shadow-xl shadow-black/40 ring-1 ring-emerald-400/10">
+              {chapters.map((c, idx) => (
+                <button
+                  key={c.id}
+                  onClick={() => scrollTo(c.id)}
+                  className={
+                    "snap-start flex items-center gap-1.5 px-3 md:px-4 py-1.5 rounded-full text-[11px] md:text-xs font-medium border transition-all whitespace-nowrap " +
+                    (active === c.id
+                      ? "bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 border-transparent shadow-md shadow-emerald-400/50 scale-[1.02]"
+                      : "bg-white/5 text-slate-200 border-slate-700/70 hover:bg-white/10 hover:border-emerald-400/70 hover:text-emerald-200 hover:shadow-sm")
+                  }
+                >
+                  {/* JUST SHOW CHAPTER X */}
+                  <span className="uppercase tracking-wide">
+                    CHAPTER {idx + 1}
+                  </span>
+                </button>
+              ))}
+            </nav>
+          </div>
         </div>
       </header>
 
-      {/* 🌟 CONTENT AREA – widened */}
+      {/* 🌟 CONTENT AREA */}
       <main className="mx-auto w-full max-w-[1600px] px-2 md:px-4 pb-24 pt-6 md:pt-8">
         {chapters.map((c) => {
           const setRef = (el) => (sectionRefs.current[c.id] = el);
