@@ -11,8 +11,7 @@ import Chapter9Section from "./pages/chapter/Chapter9.jsx";
 import Chapter10Section from "./pages/chapter/Chapter10.jsx";
 import Chapter11Section from "./pages/chapter/Chapter11.jsx";
 
-
-// 🌈 Gradient background + Top Navigation Layout
+// 🌑 Dark transparent theme + Top Navigation Layout
 export default function AssessmentPortfolio() {
   const chapters = useMemo(
     () => [
@@ -53,45 +52,71 @@ export default function AssessmentPortfolio() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <div className="min-h-screen text-gray-900 bg-gradient-to-br from-green-200 via-teal-100 to-blue-200">
-      {/* 🌟 TOP NAVIGATION BAR */}
-      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3 justify-between">
-          <h1 className="text-lg font-bold tracking-tight">Assessment Portfolio</h1>
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+      {/* 🌟 TOP NAVIGATION BAR + HORIZONTAL CHAPTER BAR */}
+      <header className="sticky top-0 z-40 bg-slate-950/30 backdrop-blur-2xl">
+        {/* full-width container */}
+        <div className="w-full px-3 md:px-6 py-2 flex flex-col gap-2">
+          {/* Brand + small summary */}
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 via-cyan-400 to-sky-500 flex items-center justify-center text-xs font-bold text-slate-950 shadow-md shadow-emerald-400/40">
+                PS
+              </div>
+              <div className="text-left">
+                <h1 className="text-sm md:text-base font-semibold tracking-tight">
+                  Assessment Portfolio – PS Module
+                </h1>
+                <p className="text-[10px] md:text-xs text-slate-300">
+                  Scroll through each chapter to see your learnings, reflections and activities.
+                </p>
+              </div>
+            </div>
 
-          <nav className="flex overflow-x-auto gap-2 pb-2 no-scrollbar">
+            <div className="hidden sm:flex flex-col items-end text-[10px] md:text-xs text-slate-300">
+              <span className="font-semibold text-emerald-300">
+                {chapters.findIndex((c) => c.id === active) + 1} / {chapters.length}
+              </span>
+              <span>Active chapter</span>
+            </div>
+          </div>
+
+          {/* full-width “glass” chapter bar touching both edges */}
+          <nav className="nav-scroll w-full mt-2 flex items-center gap-2 overflow-x-auto px-2 py-1.5 bg-slate-900/55 border-y border-slate-800/80 backdrop-blur-2xl shadow-xl shadow-black/40 ring-1 ring-emerald-400/10">
             {chapters.map((c, idx) => (
               <button
                 key={c.id}
                 onClick={() => scrollTo(c.id)}
                 className={
-                  "px-4 py-2 rounded-full text-sm font-semibold border transition whitespace-nowrap " +
+                  "snap-start flex items-center gap-1.5 px-3 md:px-4 py-1.5 rounded-full text-[11px] md:text-xs font-medium border transition-all whitespace-nowrap " +
                   (active === c.id
-                    ? "bg-green-600 text-white border-green-600"
-                    : "bg-white text-gray-700 border-green-300 hover:bg-green-100")
+                    ? "bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 border-transparent shadow-md shadow-emerald-400/50 scale-[1.02]"
+                    : "bg-white/5 text-slate-200 border-slate-700/70 hover:bg-white/10 hover:border-emerald-400/70 hover:text-emerald-200 hover:shadow-sm")
                 }
               >
-                {`Chapter ${idx + 1}`}
+                <span className="text-[10px] opacity-80">Ch {idx + 1}</span>
+                <span className="hidden sm:inline line-clamp-1 max-w-[160px]">
+                  {c.title}
+                </span>
               </button>
             ))}
           </nav>
         </div>
       </header>
 
-      {/* 🌟 CONTENT AREA */}
-      <main className="max-w-6xl mx-auto px-4 md:px-6 pt-8 pb-20">
-        {/*mewa wens nokranuuuu  */}
+      {/* 🌟 CONTENT AREA – widened */}
+      <main className="mx-auto w-full max-w-[1600px] px-2 md:px-4 pb-24 pt-6 md:pt-8">
         {chapters.map((c) => {
           const setRef = (el) => (sectionRefs.current[c.id] = el);
 
+          const cardClasses =
+            "scroll-mt-40 md:scroll-mt-44 rounded-3xl bg-white/5 backdrop-blur-2xl border border-slate-800 " +
+            "shadow-xl hover:shadow-2xl hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all p-4 md:p-8 mb-10 " +
+            "min-h-[70vh] md:min-h-[80vh] flex flex-col text-slate-100";
+
           if (c.id === "ch1") {
             return (
-              <article
-                key="ch1"
-                id="ch1"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch1" id="ch1" ref={setRef} className={cardClasses}>
                 <Chapter1Section />
               </article>
             );
@@ -99,12 +124,7 @@ export default function AssessmentPortfolio() {
 
           if (c.id === "ch2") {
             return (
-              <article
-                key="ch2"
-                id="ch2"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch2" id="ch2" ref={setRef} className={cardClasses}>
                 <Chapter2Section />
               </article>
             );
@@ -112,12 +132,7 @@ export default function AssessmentPortfolio() {
 
           if (c.id === "ch3") {
             return (
-              <article
-                key="ch3"
-                id="ch3"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch3" id="ch3" ref={setRef} className={cardClasses}>
                 <Chapter3Section />
               </article>
             );
@@ -125,112 +140,74 @@ export default function AssessmentPortfolio() {
 
           if (c.id === "ch4") {
             return (
-              <article
-                key="ch4"
-                id="ch4"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch4" id="ch4" ref={setRef} className={cardClasses}>
                 <Chapter4Section />
               </article>
             );
           }
+
           if (c.id === "ch5") {
             return (
-              <article
-                key="ch5"
-                id="ch5"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch5" id="ch5" ref={setRef} className={cardClasses}>
                 <Chapter5Section />
               </article>
             );
           }
+
           if (c.id === "ch6") {
             return (
-              <article
-                key="ch6"
-                id="ch6"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch6" id="ch6" ref={setRef} className={cardClasses}>
                 <Chapter6Section />
               </article>
             );
           }
+
           if (c.id === "ch7") {
             return (
-              <article
-                key="ch7"
-                id="ch7"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch7" id="ch7" ref={setRef} className={cardClasses}>
                 <Chapter7Section />
               </article>
             );
           }
+
           if (c.id === "ch8") {
             return (
-              <article
-                key="ch8"
-                id="ch8"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch8" id="ch8" ref={setRef} className={cardClasses}>
                 <Chapter8Section />
               </article>
             );
           }
+
           if (c.id === "ch9") {
             return (
-              <article
-                key="ch9"
-                id="ch9"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch9" id="ch9" ref={setRef} className={cardClasses}>
                 <Chapter9Section />
               </article>
             );
           }
+
           if (c.id === "ch10") {
             return (
-              <article
-                key="ch10"
-                id="ch10"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch10" id="ch10" ref={setRef} className={cardClasses}>
                 <Chapter10Section />
               </article>
             );
           }
+
           if (c.id === "ch11") {
             return (
-              <article
-                key="ch11"
-                id="ch11"
-                ref={setRef}
-                className="scroll-mt-24 bg-white shadow-lg border border-gray-200 rounded-2xl p-6 md:p-8 mb-8"
-              >
+              <article key="ch11" id="ch11" ref={setRef} className={cardClasses}>
                 <Chapter11Section />
               </article>
             );
           }
-          {/*mewa wens nokranuuuu  */}
 
+          // Fallback (not really used)
           return (
-            <article
-              key={c.id}
-              id={c.id}
-              ref={setRef}
-              className="scroll-mt-24 bg-white border border-gray-200 rounded-2xl shadow p-6 md:p-8 mb-8"
-            >
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">{c.title}</h2>
-              <p className="text-gray-600 mb-4">Chapter overview</p>
-              <p className="text-gray-700">{c.body}</p>
+            <article key={c.id} id={c.id} ref={setRef} className={cardClasses}>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">{c.title}</h2>
+              <p className="text-sm text-slate-300 mb-4">Chapter overview</p>
+              <p className="text-sm md:text-base text-slate-100">{c.body}</p>
             </article>
           );
         })}
@@ -243,6 +220,7 @@ export default function AssessmentPortfolio() {
 
 function ReadingProgress() {
   const [pct, setPct] = useState(0);
+
   useEffect(() => {
     const onScroll = () => {
       const st = window.scrollY;
@@ -256,14 +234,21 @@ function ReadingProgress() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const size = Math.round(pct);
+
   return (
-    <div className="fixed bottom-6 right-6 hidden md:flex items-center bg-white/90 border border-gray-200 shadow-lg rounded-full px-3 py-2">
-      <div className="h-2 w-40 rounded-full bg-gray-200 overflow-hidden mr-2">
-        <div className="h-2 bg-green-500" style={{ width: pct + "%" }} />
+    <div className="fixed bottom-6 right-6 hidden md:flex items-center gap-3">
+      <div className="flex items-center gap-2 rounded-full bg-slate-950/85 backdrop-blur-2xl border border-slate-700 shadow-xl shadow-emerald-500/30 px-3 py-2">
+        <div className="h-2 w-40 rounded-full bg-slate-800 overflow-hidden">
+          <div
+            className="h-2 bg-gradient-to-r from-emerald-400 via-cyan-400 to-sky-500 transition-[width] duration-150"
+            style={{ width: pct + "%" }}
+          />
+        </div>
+        <span className="text-[11px] font-semibold text-slate-100">
+          {size}% read
+        </span>
       </div>
-      <span className="text-xs font-semibold text-gray-700">
-        {Math.round(pct)}%
-      </span>
     </div>
   );
 }
