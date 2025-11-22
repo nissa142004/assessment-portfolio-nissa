@@ -360,18 +360,7 @@ export default function Chapter1Section() {
       </SectionCard>
 
       {/* References (short format) */}
-      <div className="mt-6">
-        <h3 className="text-base md:text-lg font-bold text-slate-50 mb-2">
-          References
-        </h3>
-        <ul className="list-disc pl-5 text-slate-200 text-sm space-y-1">
-          <li>Peterson &amp; Seligman (2004) — Character Strengths and Virtues.</li>
-          <li>Rokeach (1973) — The Nature of Human Values.</li>
-          <li>Schwartz (1992) — Universals in Values (AESP, Vol. 25).</li>
-          <li>Ajzen &amp; Fishbein (1980) — Attitudes &amp; Behaviour.</li>
-          <li>Eagly &amp; Chaiken (1993) — The Psychology of Attitudes.</li>
-        </ul>
-      </div>
+
     </div>
   );
 }

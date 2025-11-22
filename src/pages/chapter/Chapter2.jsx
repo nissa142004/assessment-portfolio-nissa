@@ -1,8 +1,13 @@
 // src/pages/chapter/Chapter2.jsx
-// Dark / glass theme. Restructured layout + image section. Same content ideas.
+// Dark / glass theme. Restructured layout + multiple image sections.
 
 import React from "react";
-import c2 from "../../assets/c2.jpg";
+
+// 🔁 Update these paths/names to match your real files in src/assets
+import imgCvClass from "../../assets/c2.jpg";        // in-class CV activity
+import imgResumeStack from "../../assets/c2_2.jpg";  // stack of resumes    // CV on desk with clock
+import imgCvReview from "../../assets/c2_6.jpg";     // recruiters reviewing CVs
+import imgCoverTemplate from "../../assets/c2_5.jpg"; // cover letter template
 
 const chips = [
   "CV purpose",
@@ -114,7 +119,10 @@ export default function Chapter2Section() {
       </div>
 
       {/* PART 2 – IMAGE + REAL-LIFE CONNECTION */}
-      <SectionCard tone="slate" title="In-class CV moment – from theory to practice">
+      <SectionCard
+        tone="slate"
+        title="In-class CV moment – from theory to practice"
+      >
         <div className="grid md:grid-cols-[1.5fr,1fr] gap-4 items-center">
           <div className="text-sm md:text-base text-slate-100/90">
             During our CV lesson we looked at sample CVs, highlighted strong
@@ -126,10 +134,36 @@ export default function Chapter2Section() {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src={c2}
+              src={imgCvClass}
               alt="Students analysing CV layouts during class"
               className="w-40 sm:w-52 md:w-60 lg:w-64 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
             />
+          </div>
+        </div>
+      </SectionCard>
+
+      {/* PART 2b – VISUAL EXAMPLES OF CVS */}
+      <SectionCard
+        tone="slate"
+        title="CVs & resumes – how they look in real life"
+      >
+        <div className="grid md:grid-cols-[1.4fr,1fr] gap-4 items-center">
+          <div className="text-sm md:text-base text-slate-100/90">
+            In many companies, recruiters receive a tall stack of applications
+            and only spend a few seconds on each one. Clean visual layout,
+            simple fonts and good spacing make it easier for them to find your
+            name, job titles and key skills. These pictures remind me that my CV
+            is not just text – it is also a design that must be easy to scan
+            quickly.
+          </div>
+          <div className="flex flex-col gap-3 items-center">
+            <div className="rounded-2xl overflow-hidden border border-slate-600/70 bg-slate-900/60 shadow-md">
+              <img
+                src={imgResumeStack}
+                alt="Stack of printed resumes"
+                className="w-40 sm:w-48 md:w-56 h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </SectionCard>
@@ -219,7 +253,9 @@ export default function Chapter2Section() {
 
         <SectionCard title="CV – things to avoid" tone="slate">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Spelling or grammar mistakes, very long paragraphs or tiny fonts.</li>
+            <li>
+              Spelling or grammar mistakes, very long paragraphs or tiny fonts.
+            </li>
             <li>
               Irrelevant personal data (NIC, marital status, photo) unless it is
               clearly requested.
@@ -232,34 +268,46 @@ export default function Chapter2Section() {
         </SectionCard>
       </div>
 
-      {/* PART 5 – COVER LETTER */}
+      {/* PART 5 – COVER LETTER (TEXT + IMAGE) */}
       <SectionCard tone="cyan" title="Cover letter – purpose & simple layout">
-        <p>
-          A cover letter sits next to your CV and explains why you fit this
-          specific role. It should be short (about one page) and focused.
-        </p>
-        <ol className="list-decimal pl-5 mt-2 space-y-1">
-          <li>
-            <span className="font-semibold">Header:</span> your contact
-            details, date and the employer’s details.
-          </li>
-          <li>
-            <span className="font-semibold">Opening:</span> mention the role,
-            where you saw it and one sentence that makes them want to read on.
-          </li>
-          <li>
-            <span className="font-semibold">Fit paragraph:</span> highlight 1–2
-            achievements that clearly match the job needs.
-          </li>
-          <li>
-            <span className="font-semibold">Why them:</span> show you know
-            their products, mission or culture and connect it to your goals.
-          </li>
-          <li>
-            <span className="font-semibold">Close:</span> polite call-to-action
-            with availability and a simple sign-off.
-          </li>
-        </ol>
+        <div className="grid md:grid-cols-[1.6fr,1fr] gap-4 items-start">
+          <div>
+            <p>
+              A cover letter sits next to your CV and explains why you fit this
+              specific role. It should be short (about one page) and focused.
+            </p>
+            <ol className="list-decimal pl-5 mt-2 space-y-1">
+              <li>
+                <span className="font-semibold">Header:</span> your contact
+                details, date and the employer’s details.
+              </li>
+              <li>
+                <span className="font-semibold">Opening:</span> mention the
+                role, where you saw it and one sentence that makes them want to
+                read on.
+              </li>
+              <li>
+                <span className="font-semibold">Fit paragraph:</span> highlight
+                1–2 achievements that clearly match the job needs.
+              </li>
+              <li>
+                <span className="font-semibold">Why them:</span> show you know
+                their products, mission or culture and connect it to your goals.
+              </li>
+              <li>
+                <span className="font-semibold">Close:</span> polite
+                call-to-action with availability and a simple sign-off.
+              </li>
+            </ol>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src={imgCoverTemplate}
+              alt="Simple professional cover letter template"
+              className="w-44 sm:w-52 md:w-60 lg:w-64 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+        </div>
       </SectionCard>
 
       {/* PART 6 – EXAMPLES */}
@@ -286,6 +334,29 @@ export default function Chapter2Section() {
           </p>
         </SectionCard>
       </div>
+
+      {/* PART 6b – RECRUITER VIEW IMAGE */}
+      <SectionCard
+        tone="slate"
+        title="Recruiter view – scanning many CVs quickly"
+      >
+        <div className="grid md:grid-cols-[1.5fr,1fr] gap-4 items-center">
+          <div className="text-sm md:text-base text-slate-100/90">
+            We also discussed how recruiters often compare many applications at
+            once. They scan for job titles, dates and key skills before deciding
+            which CVs to keep. This picture reminds me that my CV needs to be
+            easy to skim: clear headings, bold job titles and short bullet
+            points help my document survive this first quick filter.
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src={imgCvReview}
+              alt="Recruiters reviewing several CVs on a desk"
+              className="w-44 sm:w-52 md:w-60 lg:w-64 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+        </div>
+      </SectionCard>
 
       {/* PART 7 – ACTIVITIES */}
       <div className="grid md:grid-cols-2 gap-4 my-6">

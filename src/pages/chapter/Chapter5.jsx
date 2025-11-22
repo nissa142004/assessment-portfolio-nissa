@@ -3,6 +3,11 @@
 
 import React from "react";
 
+// Import images
+import imgTeamDiscussion from "../../assets/c52.jpg"; // Team discussion
+import imgCommunication from "../../assets/c53.jpg"; // Communication
+
+
 const chips = [
   "Meeting types",
   "Terminology",
@@ -92,6 +97,26 @@ export default function Chapter5Section() {
         </div>
       </SectionCard>
 
+      {/* Add Image for Meeting Discussion */}
+      <SectionCard tone="violet" >
+        <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <img
+              src={imgTeamDiscussion}
+              alt="Team Discussion"
+              className="w-95 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+          <div>
+            <img
+              src={imgCommunication}
+              alt="Communication"
+              className="w-95 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+        </div>
+      </SectionCard>
+
       {/* Preparation */}
       <div className="mt-6">
         <SectionCard tone="amber" title="Planning a meeting – checklist">
@@ -156,9 +181,7 @@ export default function Chapter5Section() {
             <div>
               <h4 className="font-semibold mb-1 text-violet-100">Speaking skills during the meeting</h4>
               <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  Be clear and concise; use polite phrases like “Could I add…” or “I agree because…”.
-                </li>
+                <li>Be clear and concise; use polite phrases like “Could I add…” or “I agree because…”.</li>
                 <li>Practise active listening: pay attention, paraphrase, and ask clarifying questions.</li>
                 <li>Keep a neutral, professional tone and avoid interrupting others.</li>
               </ul>

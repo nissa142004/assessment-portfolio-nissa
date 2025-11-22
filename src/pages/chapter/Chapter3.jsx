@@ -1,7 +1,11 @@
-// src/pages/chapter/Chapter3.jsx
-// Dark / glass theme. Simple English. Overview + key points + short paras + activities + self-reflection.
-
 import React from "react";
+
+
+import imgJobHunt from "../../assets/c3.jpg"; // Job hunting guide
+import imgResumeInterview from "../../assets/c31.jpg"; // Resume interview
+import imgInterviewProcess from "../../assets/c34.jpg"; // Interview process
+import imgContractReview from "../../assets/c37.jpg"; // Contract review
+import imgNegotiation from "../../assets/c32.jpg"; // Negotiation
 
 const chips = [
   "Job search",
@@ -49,8 +53,7 @@ export default function Chapter3Section() {
           Job Hunting &amp; Interview Skills
         </h1>
         <p className="mt-2 text-slate-300">
-          Learn how to search for roles that match you, explore companies in advance, and handle interviews with
-          confident, clear communication.
+          Learn how to search for roles that match you, explore companies in advance, and handle interviews with confident, clear communication.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {chips.map((c) => (
@@ -67,21 +70,42 @@ export default function Chapter3Section() {
             <li>Keep a small tracker: role, company, link, deadline, and current status.</li>
             <li>Adjust your CV to each vacancy and use key phrases from the advert in a natural way.</li>
           </ul>
+          <div className="mt-4 flex justify-center">
+            <img
+              src={imgJobHunt}
+              alt="Job hunting guide"
+              className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+          <div className="mt-4 flex justify-center">
+            <img
+              src={imgContractReview}
+              alt="Job hunting guide"
+              className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
         </SectionCard>
+
         <SectionCard tone="emerald" title="Research the company">
           <ul className="list-disc pl-5 space-y-1">
             <li>Check their products, services, mission, values, and recent news.</li>
             <li>For tech roles, note the stack, teams, and main clients or markets.</li>
             <li>Prepare 1–2 thoughtful questions that show you have done this research.</li>
           </ul>
+                    <div className="mt-4 flex justify-center">
+            <img
+              src={imgInterviewProcess}
+              alt="Job hunting guide"
+              className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
         </SectionCard>
       </div>
 
       {/* Interview basics */}
       <SectionCard tone="amber" title="Job interview basics">
         <p className="mb-2">
-          An interview is a two-way discussion about fit. You share real evidence of your skills, and they share what
-          the job and workplace are like.
+          An interview is a two-way discussion about fit. You share real evidence of your skills, and they share what the job and workplace are like.
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>Decide your core message – the main things you want them to remember about you.</li>
@@ -90,6 +114,19 @@ export default function Chapter3Section() {
             Prepare a few stories using <span className="font-semibold">STAR</span> – Situation, Task, Action, Result.
           </li>
         </ul>
+          <div className="mt-4 flex justify-center gap-20">  {/* Add gap-4 here */}
+  <img
+    src={imgResumeInterview}
+    alt="Job hunting guide"
+    className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+  />
+  <img
+    src={imgNegotiation}
+    alt="Job hunting guide"
+    className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+  />
+</div>
+
       </SectionCard>
 
       {/* Communication focus */}
@@ -99,20 +136,17 @@ export default function Chapter3Section() {
             <li>Warm greeting, natural smile, steady eye contact, open posture, and calm speaking pace.</li>
             <li>Notice the interviewer’s body language; respond with interest and professionalism.</li>
             <li>
-              Practice active listening: focus fully, show you are listening, ask for clarification, avoid quick
-              judgement, and answer carefully.
+              Practice active listening: focus fully, show you are listening, ask for clarification, avoid quick judgment, and answer carefully.
             </li>
           </ul>
         </SectionCard>
         <SectionCard title="6/7 Cs for answers" tone="slate">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              <span className="font-semibold">Clear</span> &amp;{" "}
-              <span className="font-semibold">Concise</span>: get to the point without extra stories.
+              <span className="font-semibold">Clear</span> &amp; <span className="font-semibold">Concise</span>: get to the point without extra stories.
             </li>
             <li>
-              <span className="font-semibold">Correct</span> &amp;{" "}
-              <span className="font-semibold">Complete</span>: give accurate facts and the needed details.
+              <span className="font-semibold">Correct</span> &amp; <span className="font-semibold">Complete</span>: give accurate facts and the needed details.
             </li>
             <li>
               <span className="font-semibold">Concrete</span>: add examples, results, and numbers where possible.
@@ -130,8 +164,7 @@ export default function Chapter3Section() {
           <li>Speak clearly about the position and use the company name naturally in answers.</li>
           <li>Show they have researched the organisation and follow topic changes smoothly.</li>
           <li>
-            Support their claims with specific examples, ask relevant questions, and talk slightly more than the
-            interviewer without rambling.
+            Support their claims with specific examples, ask relevant questions, and talk slightly more than the interviewer without rambling.
           </li>
         </ul>
       </SectionCard>
@@ -149,16 +182,13 @@ export default function Chapter3Section() {
         </SectionCard>
         <SectionCard title="Example STAR answer (challenge)" tone="emerald">
           <p className="mb-1">
-            <span className="font-semibold">S/T:</span> Our project was behind schedule; the deadline was 5 PM and the
-            team lead was away.
+            <span className="font-semibold">S/T:</span> Our project was behind schedule; the deadline was 5 PM and the team lead was away.
           </p>
           <p className="mb-1">
-            <span className="font-semibold">A:</span> I organised four teammates based on their strengths, focused my
-            own time on high-priority tasks, and kept the client updated.
+            <span className="font-semibold">A:</span> I organised four teammates based on their strengths, focused my own time on high-priority tasks, and kept the client updated.
           </p>
           <p>
-            <span className="font-semibold">R:</span> We delivered on time, and afterwards I was trusted to lead more
-            projects – showing leadership and time-management skills.
+            <span className="font-semibold">R:</span> We delivered on time, and afterwards I was trusted to lead more projects – showing leadership and time-management skills.
           </p>
         </SectionCard>
       </div>
@@ -194,9 +224,7 @@ export default function Chapter3Section() {
         <SectionCard title="Activity – Mock interview (pair/group)" tone="cyan">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>Use your actual CV and rotate as interviewer, interviewee, and observer.</li>
-            <li>
-              Rate 1–5 on non-verbal (eye contact, posture, voice) and verbal (clarity, examples, structure).
-            </li>
+            <li>Rate 1–5 on non-verbal (eye contact, posture, voice) and verbal (clarity, examples, structure).</li>
             <li>After feedback, write two strengths and two areas to improve.</li>
           </ul>
         </SectionCard>
@@ -217,6 +245,8 @@ export default function Chapter3Section() {
           steady eye contact while asking two thoughtful questions at the end.
         </p>
       </SectionCard>
+
+      
     </div>
   );
 }

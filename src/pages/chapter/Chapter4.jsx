@@ -3,6 +3,13 @@
 
 import React from "react";
 
+// Image imports
+import imgPortfolioTypes from "../../assets/c4.jpg"; // Portfolio types
+import imgPEAKS from "../../assets/c44.png"; // PEAKS checklist
+import imgNegotiation from  "../../assets/c55.png"; // Negotiation
+
+
+
 const chips = [
   "Portfolio types",
   "PEAKS",
@@ -68,6 +75,13 @@ export default function Chapter4Section() {
             <span className="font-semibold">who you are, what you can do, and what you have achieved</span>.
             It should feel authentic and give a true picture of you, not a fake version.
           </p>
+          <div className="mt-12 flex justify-center">
+            <img
+              src={imgPortfolioTypes}
+              alt="Portfolio types"
+              className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
         </SectionCard>
         <SectionCard tone="emerald" title="Why keep one?">
           <ul className="list-disc pl-5 space-y-1">
@@ -75,6 +89,13 @@ export default function Chapter4Section() {
             <li>Makes invisible strengths like teamwork or leadership visible.</li>
             <li>Builds confidence and creates a bridge to new opportunities.</li>
           </ul>
+          <div className="mt-4 flex justify-center">
+            <img
+              src={imgPEAKS}
+              alt="PEAKS checklist"
+              className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
         </SectionCard>
       </div>
 
@@ -117,32 +138,43 @@ export default function Chapter4Section() {
           <p className="mt-2 text-sm text-slate-200/90">
             Use PEAKS as a quick filter when you collect and select items for your portfolio.
           </p>
+          
         </SectionCard>
       </div>
 
       {/* Master vs Targeted (structure changed: combined card with two columns) */}
-      <SectionCard tone="slate" title="Master vs Targeted portfolios">
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold mb-1 text-slate-50">Master portfolio – your archive</h4>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>Large collection of documents grouped using PEAKS.</li>
-              <li>
-                Includes bio data, people skills, learning skills, self-management, tasks, and community service.
-              </li>
-              <li>Recent evidence is very powerful; note gaps so you can build them later.</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-1 text-slate-50">Targeted portfolio – for a specific role</h4>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>Start by describing the opportunity honestly and clearly.</li>
-              <li>Identify which PEAKS the employer or assessor is really looking for.</li>
-              <li>Select only the items that directly prove you have those PEAKS.</li>
-            </ul>
-          </div>
-        </div>
-      </SectionCard>
+{/* Master vs Targeted (structure changed: combined card with two columns) */}
+<SectionCard tone="slate" title="Master vs Targeted portfolios">
+  <div className="grid md:grid-cols-2 gap-4">
+    <div>
+      <h4 className="font-semibold mb-1 text-slate-50">Master portfolio – your archive</h4>
+      <ul className="list-disc pl-5 space-y-1 text-sm">
+        <li>Large collection of documents grouped using PEAKS.</li>
+        <li>
+          Includes bio data, people skills, learning skills, self-management, tasks, and community service.
+        </li>
+        <li>Recent evidence is very powerful; note gaps so you can build them later.</li>
+      </ul>  
+      
+    </div>
+    <div>
+      <h4 className="font-semibold mb-1 text-slate-50">Targeted portfolio – for a specific role</h4>
+      <ul className="list-disc pl-5 space-y-1 text-sm">
+        <li>Start by describing the opportunity honestly and clearly.</li>
+        <li>Identify which PEAKS the employer or assessor is really looking for.</li>
+        <li>Select only the items that directly prove you have those PEAKS.</li>
+      </ul>
+    </div>
+  </div>
+  <div className="mt-4 flex justify-center gap-20">  {/* Add gap-4 here */}
+        <img
+          src={imgNegotiation}
+          alt="Job hunting guide"
+          className="w-72 max-h-80 border-slate-600/70 bg-slate-900/60 shadow-lg"
+        />
+      </div>
+</SectionCard>
+
 
       {/* Organizing & After */}
       <div className="grid md:grid-cols-2 gap-4 mb-6 mt-6">
