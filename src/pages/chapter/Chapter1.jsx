@@ -83,35 +83,7 @@ export default function Chapter1Section() {
         </div>
       </header>
 
-      {/* Assessment Weights */}
-      <div className="grid md:grid-cols-3 gap-4 mb-6">
-        <SectionCard tone="amber" title="Continuous Assessment (100%)">
-          <ul className="list-disc pl-5 space-y-1">
-            <li><span className="font-semibold">Assignment 1 (30%)</span> — CV, Cover Letter, Mock Interview</li>
-            <li><span className="font-semibold">Assignment 2 (20%)</span> — Food Festival & Report</li>
-            <li><span className="font-semibold">Assignment 3 (50%)</span> — Self‑Reflective Portfolio & Presentation</li>
-          </ul>
-          <p className="mt-2 text-sm"><span className="font-medium">Attendance:</span> Compulsory • <span className="font-medium">Enrolment key:</span> PS25M#</p>
-        </SectionCard>
-        <SectionCard tone="cyan" title="What are Professional / Employability Skills?">
-          <p>Non‑technical, people‑focused skills that help us succeed at work. They are <span className="font-semibold">transferable</span> across roles and industries.</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>Communication</li>
-            <li>Teamwork & collaboration</li>
-            <li>Problem‑solving & critical thinking</li>
-            <li>Adaptability & flexibility</li>
-            <li>Time management</li>
-            <li>Leadership</li>
-          </ul>
-        </SectionCard>
-        <SectionCard tone="emerald" title="Classifying Workplace Skills">
-          <ul className="list-disc pl-5 space-y-1">
-            <li><span className="font-semibold">Technical skills:</span> job‑specific tools & methods.</li>
-            <li><span className="font-semibold">Soft skills:</span> communication, teamwork, ethics.</li>
-            <li><span className="font-semibold">Transferable skills:</span> useful anywhere (e.g., problem‑solving).</li>
-          </ul>
-        </SectionCard>
-      </div>
+
 
       {/* Values, Beliefs, Attitudes, Character */}
       <div className="space-y-4 mb-6">
