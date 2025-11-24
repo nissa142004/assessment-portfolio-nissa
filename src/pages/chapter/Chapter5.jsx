@@ -72,16 +72,16 @@ export default function Chapter5Section() {
             <h4 className="font-semibold mb-1 text-cyan-100">Key terminology</h4>
             <ul className="list-disc pl-5 space-y-1">
               <li>
-                <span className="font-semibold">Agenda</span> – list of topics and timing.
+                <span className="font-semibold">Agenda</span> – agenda of subjects and schedule.
               </li>
               <li>
-                <span className="font-semibold">Minutes</span> – written record of decisions and actions.
+                <span className="font-semibold">Minutes</span> – record of course of action.
               </li>
               <li>
-                <span className="font-semibold">Action item</span> – task with clear owner and due date.
+                <span className="font-semibold">Action item</span> – task which has a clear owner and date.
               </li>
               <li>
-                <span className="font-semibold">Quorum</span> – minimum number of people needed to make decisions.
+                <span className="font-semibold">Quorum</span> – fewest number of persons needed to make decisions.
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ export default function Chapter5Section() {
             <ul className="list-disc pl-5 space-y-1">
               <li>Stand-up / progress update</li>
               <li>Planning / strategy</li>
-              <li>Problem-solving / retrospective</li>
+              <li>Problem-solving / retrospective.</li>
               <li>Training / briefing</li>
             </ul>
           </div>
@@ -121,15 +121,15 @@ export default function Chapter5Section() {
       <div className="mt-6">
         <SectionCard tone="amber" title="Planning a meeting – checklist">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Clarify purpose and outcome (decision, information, brainstorm?).</li>
-            <li>Decide who must attend – stakeholders and key roles.</li>
-            <li>Fix date, time, location or online link and needed facilities.</li>
-            <li>Choose length and style – formal, semi-formal, or informal.</li>
+            <li>State objective and result (decision, information, brainstorm?).</li>
+            <li>Decision on who to attend to, stakeholders and key positions.</li>
+            <li>Online chain and facilities or location needed, time and date required.</li>
+            <li>Choose length and style as formal, semi-formal or informal.</li>
             <li>
-              Prepare documents: invitation, agenda, previous minutes, and working papers.
+              Compile documents: invitation, an agenda, past minutes, working papers.
             </li>
             <li>
-              Think about risks or problems that might appear and how to avoid or handle them.
+              Think of potential risks or issues that might come about and what to avoid or do to solve them.
             </li>
           </ul>
         </SectionCard>
@@ -142,24 +142,24 @@ export default function Chapter5Section() {
             <div>
               <h4 className="font-semibold mb-1 text-slate-50">Common roles</h4>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Chair / Facilitator – keeps focus, manages time, invites everyone to share.</li>
-                <li>Secretary / Minute-taker – records decisions and action items.</li>
-                <li>Timekeeper – monitors timings for each agenda item.</li>
+                <li>Chair / Facilitator- keeps on track, time management, make people talk.</li>
+                <li>Secretary / Minute-taker - records decisions and action items.</li>
+                <li>Timekeeper - records timings in all the agenda items.</li>
                 <li>
-                  Participants – contribute ideas, stay on topic, and take responsibility for actions.
+                  Participants - think, be punctual and accountable in actions.
                 </li>
-                <li>Observer (optional) – watches the process and gives feedback later.</li>
+                <li>Observer (optional) - oversees the process and gives feedback in the future.</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-1 text-slate-50">Sample agenda – project progress</h4>
+              <h4 className="font-semibold mb-1 text-slate-50">Project agenda progress sample.</h4>
               <ol className="list-decimal pl-5 space-y-1">
-                <li>Welcome &amp; objectives (2 min)</li>
-                <li>Review last actions – closed / open (5 min)</li>
-                <li>Team updates: Dev · QA · Design (10 min)</li>
-                <li>Risks &amp; blockers (5 min)</li>
-                <li>Decisions &amp; new actions (5 min)</li>
-                <li>Next steps &amp; next meeting date (3 min)</li>
+                <li>Welcome & objectives (2 min)</li>
+                <li>Check or check up past steps- closed/open (5 min)</li>
+                <li>Design (10 min) QA Team updates: Dev (10 min) Design</li>
+                <li>Risks & blockers (5 min)</li>
+                <li>Decisions & new actions (5 min)</li>
+                <li>The next steps and next meeting date (3 min) will be discussed at this stage.</li>
               </ol>
             </div>
           </div>
@@ -171,19 +171,19 @@ export default function Chapter5Section() {
         <SectionCard tone="violet" title="Facilitation & speaking skills in meetings">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <h4 className="font-semibold mb-1 text-violet-100">Facilitation – keep people engaged</h4>
+              <h4 className="font-semibold mb-1 text-violet-100">Facilitation – keep people involved</h4>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Explain the objective and timeboxes at the start; park off-topic items.</li>
-                <li>Invite quieter members by name and rotate who speaks.</li>
-                <li>Summarise key points often and confirm decisions and owners.</li>
+                <li>State purpose and timeboxes; put aside out of topic things.</li>
+                <li>Make calls to members who speak in very low tones by their names and alternate.</li>
+                <li>Summarize key points on a regular basis and legitimize determination and the owners.</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-1 text-violet-100">Speaking skills during the meeting</h4>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Be clear and concise; use polite phrases like “Could I add…” or “I agree because…”.</li>
-                <li>Practise active listening: pay attention, paraphrase, and ask clarifying questions.</li>
-                <li>Keep a neutral, professional tone and avoid interrupting others.</li>
+                <li>Be brief and to the point; compliment like Could I add or I agree because.</li>
+                <li>Be a good listener: listen, paraphrase and clarifying questions.</li>
+                <li>Appear professional, be neutral and non-intrusive.</li>
               </ul>
             </div>
           </div>
@@ -195,16 +195,13 @@ export default function Chapter5Section() {
         <SectionCard tone="cyan" title="Common challenges → fixes">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              <span className="font-semibold">Low participation</span> → use round-robin sharing and gentle,
-              direct invites.
+              <span className="font-semibold">Minimal participation</span> → round-robin sharing and soft, direct invitations.
             </li>
             <li>
-              <span className="font-semibold">Time overruns</span> → give the timekeeper more authority; move items
-              to a “parking lot” list for another meeting.
+              <span className="font-semibold">Time overruns</span> → empower the timekeeper further; put the items in a list on the parking lot to be discussed during another meeting.
             </li>
             <li>
-              <span className="font-semibold">Off-topic debates</span> → restate the objective, summarise, and move
-              the group forward.
+              <span className="font-semibold">Digressionary discussion space</span> → paraphrase the purpose, summarize and get the group back on track.
             </li>
           </ul>
         </SectionCard>
@@ -215,9 +212,9 @@ export default function Chapter5Section() {
         <SectionCard tone="slate" title="Evaluate the meeting (quick form)">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>Were the objectives met? (rate 1–5)</li>
-            <li>Did everyone have a chance to speak? (Yes/No)</li>
-            <li>Are next steps and owners clear? (Yes/No)</li>
-            <li>What should be improved for the next meeting?</li>
+            <li>Was it a right of speech to you all? (Yes/No)</li>
+            <li>Are next steps and owners unambiguous? (Yes/No)</li>
+            <li>What was not covered in the last meeting that needs to be improved?</li>
           </ul>
         </SectionCard>
       </div>
@@ -226,18 +223,16 @@ export default function Chapter5Section() {
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard title="Group activity – roles & agenda" tone="amber">
           <ol className="list-decimal pl-5 space-y-1 text-sm">
-            <li>List 3–4 different meeting types and write 2 objectives for each one.</li>
-            <li>Assign roles for your group and write down the responsibilities.</li>
-            <li>Create a 6-item agenda for a progress meeting using those roles.</li>
+            <li>List 3–4 different meeting types, and give 2 objectives on meeting.</li>
+            <li>Assign roles and write down the roles.</li>
+            <li>To such functions, prepare a 6-item agenda to a progress meeting.</li>
           </ol>
         </SectionCard>
         <SectionCard title="Facilitation & challenges" tone="amber">
           <ol className="list-decimal pl-5 space-y-1 text-sm">
-            <li>Write 3 strategies your group can use to increase participation.</li>
-            <li>
-              Explain why time management is important; give one real or imagined example.
-            </li>
-            <li>List 3 common challenges in meetings and suggest a fix for each one.</li>
+            <li>Write 3 ways how your group can become more participatory.</li>
+            <li>Explain why time management is important; give an example, either real or imagined.</li>
+            <li>Identify 3 most common issues during meetings and suggest a solution to each of them.</li>
           </ol>
         </SectionCard>
       </div>
@@ -245,10 +240,7 @@ export default function Chapter5Section() {
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 05)">
         <p>
-          In this chapter I practised how to plan a meeting, choose roles, and speak more clearly. I now understand
-          how facilitation, listening, and time management change the whole atmosphere of a meeting. Next time I run
-          or join a meeting, I will prepare a short agenda, invite quieter members to share, finish with actions and
-          owners, and use a simple evaluation checklist so each meeting becomes better than the last.
+          This chapter assisted me in rehearsing my meeting planning and role selection as well as speaking. I now understand the effect of facilitation, listening and time management to change the whole atmosphere of a meeting. I will apply to a short agenda, request members to be more silent, and sum up my meeting by taking measures and owners before ensuring that every meeting is even greater than the last one in the future by applying a simple evaluation checklist.
         </p>
       </SectionCard>
     </div>

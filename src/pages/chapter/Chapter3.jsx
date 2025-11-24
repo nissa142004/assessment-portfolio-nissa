@@ -1,5 +1,7 @@
-import React from "react";
+// src/pages/chapter/Chapter3.jsx
+// Dark / glass theme. Restructured layout + multiple image sections.
 
+import React from "react";
 
 import imgJobHunt from "../../assets/c3.jpg"; // Job hunting guide
 import imgResumeInterview from "../../assets/c31.jpg"; // Resume interview
@@ -66,9 +68,9 @@ export default function Chapter3Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="cyan" title="What’s out there? (Job search)">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Look in many places: company websites, LinkedIn, job portals, referrals, and career fairs.</li>
-            <li>Keep a small tracker: role, company, link, deadline, and current status.</li>
-            <li>Adjust your CV to each vacancy and use key phrases from the advert in a natural way.</li>
+            <li>Search everywhere: on company websites, LinkedIn, job portals, referrals and career fairs.</li>
+            <li>Maintain a mini tracker: role, company, connection, deadline, and status.</li>
+            <li>Make sure you tailor your CV to each position and use relevant phrases in the advert in a natural manner.</li>
           </ul>
           <div className="mt-4 flex justify-center">
             <img
@@ -88,11 +90,11 @@ export default function Chapter3Section() {
 
         <SectionCard tone="emerald" title="Research the company">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Check their products, services, mission, values, and recent news.</li>
-            <li>For tech roles, note the stack, teams, and main clients or markets.</li>
-            <li>Prepare 1–2 thoughtful questions that show you have done this research.</li>
+            <li>Examine their products, services, mission, values and new news.</li>
+            <li>In tech work, include the stack and teams as well as the primary clients or markets.</li>
+            <li>Write down 1–2 reflective questions that demonstrate the fact that you have conducted this research.</li>
           </ul>
-                    <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <img
               src={imgInterviewProcess}
               alt="Job hunting guide"
@@ -105,55 +107,42 @@ export default function Chapter3Section() {
       {/* Interview basics */}
       <SectionCard tone="amber" title="Job interview basics">
         <p className="mb-2">
-          An interview is a two-way discussion about fit. You share real evidence of your skills, and they share what the job and workplace are like.
+          An interview is a two-way conversation that is about fit. You exchange actual information on what you can do and they on what the job and the place of work is like.
         </p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Decide your core message – the main things you want them to remember about you.</li>
-          <li>Handle weaknesses honestly but briefly; focus on how you are working to improve.</li>
-          <li>
-            Prepare a few stories using <span className="font-semibold">STAR</span> – Situation, Task, Action, Result.
-          </li>
+          <li>Determine the message that you want to have at the heart of things, the things you would want them to remember about you.</li>
+          <li>Address weaknesses candidly, but in a very short time; concentrate on the progress that you are making.</li>
+          <li>Write a couple of stories with the help of STAR - Situation, Task, Action, Result.</li>
         </ul>
-          <div className="mt-4 flex justify-center gap-20">  {/* Add gap-4 here */}
-  <img
-    src={imgResumeInterview}
-    alt="Job hunting guide"
-    className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
-  />
-  <img
-    src={imgNegotiation}
-    alt="Job hunting guide"
-    className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
-  />
-</div>
-
+        <div className="mt-4 flex justify-center gap-20">
+          <img
+            src={imgResumeInterview}
+            alt="Job hunting guide"
+            className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+          />
+          <img
+            src={imgNegotiation}
+            alt="Job hunting guide"
+            className="w-72 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+          />
+        </div>
       </SectionCard>
 
       {/* Communication focus */}
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard title="Non-verbal & verbal communication" tone="emerald">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Warm greeting, natural smile, steady eye contact, open posture, and calm speaking pace.</li>
-            <li>Notice the interviewer’s body language; respond with interest and professionalism.</li>
-            <li>
-              Practice active listening: focus fully, show you are listening, ask for clarification, avoid quick judgment, and answer carefully.
-            </li>
+            <li>Half-hearted welcome, natural smiling, constant eye contact, free position, and measured speech rate.</li>
+            <li>Pay attention to the body language of the interviewer; be interested and professional.</li>
+            <li>Active listening: listen fully, demonstrate that you are listening, seek clarification, do not judge quickly and reply thoughtfully.</li>
           </ul>
         </SectionCard>
         <SectionCard title="6/7 Cs for answers" tone="slate">
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-              <span className="font-semibold">Clear</span> &amp; <span className="font-semibold">Concise</span>: get to the point without extra stories.
-            </li>
-            <li>
-              <span className="font-semibold">Correct</span> &amp; <span className="font-semibold">Complete</span>: give accurate facts and the needed details.
-            </li>
-            <li>
-              <span className="font-semibold">Concrete</span>: add examples, results, and numbers where possible.
-            </li>
-            <li>
-              <span className="font-semibold">Courteous/Confident</span>: keep a polite tone and positive attitude.
-            </li>
+            <li><span className="font-semibold">Concise</span> &amp; <span className="font-semibold">Concise</span>: no additional narratives.</li>
+            <li><span className="font-semibold">Right</span>: include valid facts and the required information.</li>
+            <li><span className="font-semibold">Concrete</span>: include examples, results and numbers where feasible.</li>
+            <li><span className="font-semibold">Courteous/Confident</span>: be polite and look forward to it.</li>
           </ul>
         </SectionCard>
       </div>
@@ -161,11 +150,9 @@ export default function Chapter3Section() {
       {/* Successful vs unsuccessful cues */}
       <SectionCard tone="cyan" title="What successful candidates do">
         <ul className="list-disc pl-5 space-y-1">
-          <li>Speak clearly about the position and use the company name naturally in answers.</li>
-          <li>Show they have researched the organisation and follow topic changes smoothly.</li>
-          <li>
-            Support their claims with specific examples, ask relevant questions, and talk slightly more than the interviewer without rambling.
-          </li>
+          <li>Talk fluently on the position and refer to the company name in the response in a natural manner.</li>
+          <li>Demonstrate they have done research on the organisation, and track changes of topics easily.</li>
+          <li>Be able to back up their arguments with concrete examples, pose pertinent questions, and discuss a little more than the interviewer, without being overly wordy.</li>
         </ul>
       </SectionCard>
 
@@ -174,22 +161,16 @@ export default function Chapter3Section() {
         <SectionCard title="Common interview questions (prepare with STAR)" tone="amber">
           <ul className="list-disc pl-5 space-y-1">
             <li>Tell me about yourself.</li>
-            <li>Describe a challenge you faced and how you handled it.</li>
-            <li>Tell me about a time you managed a conflict in a team.</li>
-            <li>Share a mistake you made and what you learned from it.</li>
-            <li>Why do you want to work for this company and in this role?</li>
+            <li>Explain a problem that you encountered and how you managed it.</li>
+            <li>Share an experience with you and a conflict within the team.</li>
+            <li>Discuss one of your mistakes and the lesson you learnt.</li>
+            <li>Why do you desire to be employed with this company and in this position?</li>
           </ul>
         </SectionCard>
         <SectionCard title="Example STAR answer (challenge)" tone="emerald">
-          <p className="mb-1">
-            <span className="font-semibold">S/T:</span> Our project was behind schedule; the deadline was 5 PM and the team lead was away.
-          </p>
-          <p className="mb-1">
-            <span className="font-semibold">A:</span> I organised four teammates based on their strengths, focused my own time on high-priority tasks, and kept the client updated.
-          </p>
-          <p>
-            <span className="font-semibold">R:</span> We delivered on time, and afterwards I was trusted to lead more projects – showing leadership and time-management skills.
-          </p>
+          <p className="mb-1"><span className="font-semibold">S/T:</span> Our project was lagging behind schedule, the deadline was 5 PM and the team head was absent.</p>
+          <p className="mb-1"><span className="font-semibold">A:</span> I have been able to do it by organising four of my teammates according to their strengths, dedicating my own time to my high-priority tasks, and making the client informed.</p>
+          <p><span className="font-semibold">R:</span> I had time-management and leadership skills as I was able to lead more projects after being trusted, as a result of being on time.</p>
         </SectionCard>
       </div>
 
@@ -197,9 +178,9 @@ export default function Chapter3Section() {
       <div className="grid md:grid-cols-3 gap-4 my-6">
         <SectionCard title="What to wear / take" tone="slate">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Choose neat, simple clothing that suits the role and company culture.</li>
-            <li>Carry extra CV copies, portfolio links, a notebook and pen, and ID.</li>
-            <li>Plan your route and arrive around 10–15 minutes early.</li>
+            <li>Wear simple and clean clothes that fit the job and corporate culture.</li>
+            <li>Bring additional copies of CV, portfolio links, a notebook and pen and ID.</li>
+            <li>Arrange your schedule and get to arrive between 10 and 15 minutes ahead of schedule.</li>
           </ul>
         </SectionCard>
         <SectionCard title="Language support (quick)" tone="slate">
@@ -207,14 +188,14 @@ export default function Chapter3Section() {
             <li>Strengths: “I’m good at… / My main strength is…”</li>
             <li>Education: “I have completed… / I recently graduated…”</li>
             <li>Experience: “From 2023–2024 I worked as… / I volunteered as…”</li>
-            <li>Future goals: “I’m looking to grow my skills in…”</li>
+            <li>Future aspirations: “I want to expand my capabilities in...”</li>
           </ul>
         </SectionCard>
         <SectionCard title="Your questions to ask" tone="slate">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Ask about the team’s current priorities and daily tools.</li>
-            <li>“What would success in the first 90 days look like?”</li>
-            <li>Growth opportunities, mentoring, and how feedback is given.</li>
+            <li>Ask about the daily tools and priorities of the team.</li>
+            <li>“What would success on the first 90 days be like?”</li>
+            <li>The possibilities of development, mentorship, and feedback methods.</li>
           </ul>
         </SectionCard>
       </div>
@@ -223,15 +204,15 @@ export default function Chapter3Section() {
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard title="Activity – Mock interview (pair/group)" tone="cyan">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Use your actual CV and rotate as interviewer, interviewee, and observer.</li>
-            <li>Rate 1–5 on non-verbal (eye contact, posture, voice) and verbal (clarity, examples, structure).</li>
-            <li>After feedback, write two strengths and two areas to improve.</li>
+            <li>Use your actual CV and take the roles of an interviewer, an interviewee, and an observer.</li>
+            <li>Non-verbal (eye contact, posture, voice) and verbal (clarity, examples, structure) 1-5 rate.</li>
+            <li>On the basis of feedback, write two strengths and two areas to improve.</li>
           </ul>
         </SectionCard>
         <SectionCard title="Activity – Q lists" tone="cyan">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Prepare two lists: possible questions interviewers may ask and questions you plan to ask them.</li>
-            <li>Practice answering out loud with a timer (around 1–2 minutes per question).</li>
+            <li>Make two lists one of the possible questions which interviewers might ask or questions you are going to ask interviewers.</li>
+            <li>Out loud practice (approximately 1-2 minutes per question).</li>
           </ul>
         </SectionCard>
       </div>
@@ -239,14 +220,9 @@ export default function Chapter3Section() {
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 03)">
         <p>
-          This chapter showed me how powerful structured answers and body language are in interviews. I now know how to
-          use STAR to give focused examples and how to listen actively instead of rushing to respond. For future
-          interviews, I will research each company properly, prepare three strong stories in advance, and practise keeping
-          steady eye contact while asking two thoughtful questions at the end.
+          This chapter demonstrated to me the strength of structured responses and body language during interviews. I have learned to provide narrowed down examples using STAR, and to be an active listener rather than hurrying to reply. To do the interviews in future, I will research about each company appropriately, prepare three good stories in advance and rehearse on maintaining constant eye contact and asking two good questions at the end.
         </p>
       </SectionCard>
-
-      
     </div>
   );
 }

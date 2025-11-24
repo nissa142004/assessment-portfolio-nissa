@@ -96,23 +96,22 @@ export default function Chapter2Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="cyan" title="What is a CV?">
           <p>
-            A CV (Curriculum Vitae) is a formal 1–2 page document that
-            summarises your education, experience, skills and achievements. It
-            lets recruiters quickly see whether you fit a role. A resume is
-            often shorter and more condensed, although some countries use both
-            words for the same thing.
+            A CV (Curriculum Vitae) is a one to two page document that will
+            outline your education, experience, skills and achievements. It
+            allows recruiters to focus on whether you fit a role very fast. A
+            resume is more compact sometimes even shorter and some countries
+            refer to the same words using different terms.
           </p>
         </SectionCard>
 
         <SectionCard tone="emerald" title="Why your CV matters">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              Make a strong first impression with clear, error-free writing.
+              Impress the audience with proper and impeccable writing.
             </li>
-            <li>Show relevant proof of impact using numbers and outcomes.</li>
+            <li>Present applicable evidence of impact by the use of numbers and results.</li>
             <li>
-              Pass Applicant Tracking Systems (ATS) by using keywords from the
-              job description in a natural way.
+              Apply Pass Applicant Tracking Systems (ATS) by applying the job description keywords in a natural manner.
             </li>
           </ul>
         </SectionCard>
@@ -121,16 +120,18 @@ export default function Chapter2Section() {
       {/* PART 2 – IMAGE + REAL-LIFE CONNECTION */}
       <SectionCard
         tone="slate"
-        title="In-class CV moment – from theory to practice"
+        title="CV moment in class- theory into practice"
       >
         <div className="grid md:grid-cols-[1.5fr,1fr] gap-4 items-center">
           <div className="text-sm md:text-base text-slate-100/90">
-            During our CV lesson we looked at sample CVs, highlighted strong
-            bullet points and then marked weak ones. We also compared CVs and
-            resumes used in different countries. This helped me understand what
-            real recruiters look for and how to avoid common mistakes. The photo
-            shows the kind of focused, practical discussion we had while
-            reviewing layouts and content together.
+            We were also shown sample CVs in our CV lesson during which we
+            identified strong bullet points and then crossed weak ones. Another
+            aspect that we have compared is that of CVs and resumes that were
+            used in the various countries. It allowed me to realise what should
+            be expected of real recruiters and what mistakes can be avoided. The
+            photo demonstrates the type of efficient and concentrated conversation
+            we experienced in the process of going through layouts and content
+            collectively.
           </div>
           <div className="flex items-center justify-center">
             <img
@@ -145,16 +146,16 @@ export default function Chapter2Section() {
       {/* PART 2b – VISUAL EXAMPLES OF CVS */}
       <SectionCard
         tone="slate"
-        title="CVs & resumes – how they look in real life"
+        title="CVs & resumes- the real-life appearance."
       >
         <div className="grid md:grid-cols-[1.4fr,1fr] gap-4 items-center">
           <div className="text-sm md:text-base text-slate-100/90">
-            In many companies, recruiters receive a tall stack of applications
-            and only spend a few seconds on each one. Clean visual layout,
-            simple fonts and good spacing make it easier for them to find your
-            name, job titles and key skills. These pictures remind me that my CV
-            is not just text – it is also a design that must be easy to scan
-            quickly.
+            In most organizations, applicants are put in the tall stack of
+            applications and the recruiters have only a few seconds to go through
+            each one of them. Their name, job titles and important skills are
+            easier to find since they have clean visual layout, simple fonts and
+            good spacing. Such images make me think that my CV is not only the
+            text but the design that should be simple to read at the same time.
           </div>
           <div className="flex flex-col gap-3 items-center">
             <div className="rounded-2xl overflow-hidden border border-slate-600/70 bg-slate-900/60 shadow-md">
@@ -170,37 +171,36 @@ export default function Chapter2Section() {
 
       {/* PART 3 – CV STRUCTURE */}
       <div className="grid md:grid-cols-2 gap-4 my-6">
-        <SectionCard tone="amber" title="CV structure – the main sections">
+        <SectionCard tone="amber" title="CV structure – the key areas.">
           <ol className="list-decimal pl-5 space-y-1">
             <li>
-              <span className="font-semibold">Header:</span> name, phone,
-              email, city; optional LinkedIn, GitHub or portfolio link.
+              <span className="font-semibold">Header:</span> Name, phone, email,
+              city; optional LinkedIn, GitHub or portfolio link.
             </li>
             <li>
-              <span className="font-semibold">Profile / Summary:</span> 2–3
-              lines about your strengths and career goals, tailored to the
-              role.
+              <span className="font-semibold">Profile / Summary:</span> 23 lines
+              about your strengths and career objectives that are specific to the
+              job.
             </li>
             <li>
-              <span className="font-semibold">Experience:</span>{" "}
-              reverse-chronological list with Title · Company · Dates ·
-              impact-focused bullets.
+              <span className="font-semibold">Experience:</span> reverse-chronological
+              list Title Company Dates impact-oriented bullets.
             </li>
             <li>
-              <span className="font-semibold">Education:</span> degree,
-              institute, year and key coursework (optional).
+              <span className="font-semibold">Education:</span> degree, institute,
+              year and key work (not mandatory).
             </li>
             <li>
               <span className="font-semibold">Skills:</span> technical and soft
-              skills – be honest about your level.
+              skills - tell the truth about yourself.
             </li>
             <li>
-              <span className="font-semibold">Projects / Achievements:</span>{" "}
-              short bullets that show outcomes and metrics.
+              <span className="font-semibold">Projects / Achievements:</span> brief
+              bullets displaying results and figures.
             </li>
             <li>
-              <span className="font-semibold">Extras:</span> certifications,
-              extracurriculars, languages, and referees (optional or on
+              <span className="font-semibold">Extra:</span> certifications,
+              extra-curriculars, languages, and referees (not compulsory or by
               request).
             </li>
           </ol>
@@ -209,24 +209,19 @@ export default function Chapter2Section() {
         <SectionCard tone="slate" title="Layout, length & tailoring">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              Keep fonts consistent and leave enough white space for easy
-              reading.
+              Use fonts the same way and make sufficient white space to read.
             </li>
             <li>
-              For most students and fresh graduates, 1–2 pages are enough;
-              focus on the most relevant content.
+              In the case of the majority of students and fresh graduates, 12-2
+              pages suffice; pay attention to the most topical information.
             </li>
             <li>
-              Use action verbs and measurable results in your bullets (for
-              example,{" "}
-              <span className="italic">
-                “Improved page load time by 35%”
-              </span>
-              ).
+              Include action verbs and quantifiable outcomes in your bullets (e.g.,
+              by 35% faster page load time).
             </li>
             <li>
-              Adjust each CV to the specific job by mirroring key skills and
-              keywords from the job post.
+              Align each CV to the job based on important skills and keywords
+              posted in the job.
             </li>
           </ul>
         </SectionCard>
@@ -237,66 +232,69 @@ export default function Chapter2Section() {
         <SectionCard title="CV – things to do" tone="emerald">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              Start bullets with strong verbs and add metrics where possible.
+              Use verbs that are strong at the start and use metrics where feasible.
             </li>
             <li>
-              Use a clean, simple layout that works both on screen and when
-              printed.
+              Use plain simple layout which is both onscreen and printed.
             </li>
             <li>
-              Adapt each CV to the role; highlight the most relevant projects
-              and skills first.
+              Customize every CV to the position; provide the most topical
+              projects and abilities in the first place.
             </li>
-            <li>Keep the document to 1–2 focused pages.</li>
+            <li>Limit the document to one or two pages.</li>
           </ul>
         </SectionCard>
 
         <SectionCard title="CV – things to avoid" tone="slate">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              Spelling or grammar mistakes, very long paragraphs or tiny fonts.
+              Wrong spelling or grammar mistakes, extremely long paragraphs or
+              small fonts.
             </li>
             <li>
-              Irrelevant personal data (NIC, marital status, photo) unless it is
-              clearly requested.
+              Unless it is explicitly asked, irrelevant personal information (NIC,
+              marital status, photo).
             </li>
             <li>
-              Listing responsibilities without showing results or concrete
-              achievements.
+              Ensuring that you list his responsibilities but do not demonstrate
+              results or actual accomplishments.
             </li>
           </ul>
         </SectionCard>
       </div>
 
       {/* PART 5 – COVER LETTER (TEXT + IMAGE) */}
-      <SectionCard tone="cyan" title="Cover letter – purpose & simple layout">
+      <SectionCard tone="cyan" title="Cover letter – purpose & simple design">
         <div className="grid md:grid-cols-[1.6fr,1fr] gap-4 items-start">
           <div>
             <p>
-              A cover letter sits next to your CV and explains why you fit this
-              specific role. It should be short (about one page) and focused.
+              A cover letter is placed alongside your CV and details the reason
+              as to why you would be in this particular position. It needs to be
+              concise (one page or so) and to the point.
             </p>
             <ol className="list-decimal pl-5 mt-2 space-y-1">
               <li>
                 <span className="font-semibold">Header:</span> your contact
-                details, date and the employer’s details.
+                information, date and the information of the employer.
               </li>
               <li>
-                <span className="font-semibold">Opening:</span> mention the
-                role, where you saw it and one sentence that makes them want to
-                read on.
+                <span className="font-semibold">Introduction:</span> state the
+                job, where it was advertised and one sentence that will make the
+                reader continue to read.
               </li>
               <li>
-                <span className="font-semibold">Fit paragraph:</span> highlight
-                1–2 achievements that clearly match the job needs.
+                <span className="font-semibold">Fit paragraph:</span> put the
+                emphasis on 1-2 accomplishments that obviously fit the job
+                requirements.
               </li>
               <li>
-                <span className="font-semibold">Why them:</span> show you know
-                their products, mission or culture and connect it to your goals.
+                <span className="font-semibold">Why them:</span> demonstrate that
+                you are familiar with their products, mission or culture and
+                relate it to your mission.
               </li>
               <li>
-                <span className="font-semibold">Close:</span> polite
-                call-to-action with availability and a simple sign-off.
+                <span className="font-semibold">Close:</span> courteous
+                call-to-action with availability and an easy sign-off.
               </li>
             </ol>
           </div>
@@ -314,18 +312,14 @@ export default function Chapter2Section() {
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard title="Impact bullet examples" tone="amber">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Developed React feature that reduced user drop-off by 18%.</li>
-            <li>
-              Automated test suite with Selenium, cutting manual QA time by 40%.
-            </li>
-            <li>
-              Led a 4-member team to deliver an e-commerce MVP in 3 weeks.
-            </li>
+            <li>Innovated React functionality that minimized user attrition by 18 percent.</li>
+            <li>Selenium-based automated test suite, 40 percent faster manual QA.</li>
+            <li>Headed a 4-member team in developing an e-commerce MVP within 3 weeks.</li>
           </ul>
         </SectionCard>
 
         <SectionCard
-          title="Keywords (ATS) – example for a frontend role"
+          title="Keywords (ATS) – sample of frontend role"
           tone="emerald"
         >
           <p>
@@ -338,15 +332,16 @@ export default function Chapter2Section() {
       {/* PART 6b – RECRUITER VIEW IMAGE */}
       <SectionCard
         tone="slate"
-        title="Recruiter view – scanning many CVs quickly"
+        title="Recruiter perspective - going through large numbers of CVs in a short time."
       >
         <div className="grid md:grid-cols-[1.5fr,1fr] gap-4 items-center">
           <div className="text-sm md:text-base text-slate-100/90">
-            We also discussed how recruiters often compare many applications at
-            once. They scan for job titles, dates and key skills before deciding
-            which CVs to keep. This picture reminds me that my CV needs to be
-            easy to skim: clear headings, bold job titles and short bullet
-            points help my document survive this first quick filter.
+            Another topic that we touched upon is the fact that recruiters tend
+            to compare numerous applications simultaneously. Before determining
+            which CVs to retain, they search according to job titles, dates and
+            key skills. This image is prompting me that my CV must be able to
+            pass through this initial filter: concise subheadings, bold job titles
+            and shrub points in the bullet points, would keep my document alive.
           </div>
           <div className="flex items-center justify-center">
             <img
@@ -362,8 +357,8 @@ export default function Chapter2Section() {
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard title="Activity – Career ambitions" tone="slate">
           <p className="mb-2">
-            Write three roles you would like to do and three you would not like
-            to do, and explain briefly why.
+            List three roles that you would prefer to perform and three that you
+            would not prefer to perform and briefly justify.
           </p>
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>I like to be: ____________</li>
@@ -373,12 +368,13 @@ export default function Chapter2Section() {
 
         <SectionCard title="Activity – Cover letter gap-fill" tone="slate">
           <p className="mb-2">
-            Practise using words such as: advertised, candidate, contribute,
+            Practice using words such as: advertised, candidate, contribute,
             apply, enclosed, opportunity.
           </p>
           <p className="text-sm">
-            The worksheet from class gives a sample paragraph where you fill in
-            these words in the correct places.
+            There is a worksheet of our class in which you are provided with a
+            sample paragraph and you need to fill these words into the right
+            spots.
           </p>
         </SectionCard>
       </div>
@@ -386,12 +382,12 @@ export default function Chapter2Section() {
       {/* PART 8 – SELF-REFLECTION */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 02)">
         <p>
-          Now I understand how to present my skills clearly and prove impact
-          with numbers. I will tailor my CV for each job and keep a clean,
-          simple design. For cover letters, I plan to mention the role, show one
-          or two strong matches from my experience, and explain why I want that
-          company. My next step is to update my CV with recent projects and ask
-          a friend to review it before I apply.
+          Further I now know how to demonstrate my abilities and make an impact
+          with figures. I would use a clean and simple design and personalize my
+          CV to the job. In the case of cover letters, I will state the position,
+          provide one or two good fits based on my work experience and why I
+          desire that company. I will start by updating my CV with the new projects
+          and requesting a friend to go through it and then apply.
         </p>
       </SectionCard>
     </div>

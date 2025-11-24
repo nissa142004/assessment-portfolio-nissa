@@ -72,36 +72,26 @@ export default function Chapter9Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="cyan" title="Why table manners matter">
           <p className="mb-2 text-sm">
-            Sharing a meal is more than eating. It is a small social ritual where
-            we show respect, make others comfortable and represent our
-            professionalism and upbringing. People silently observe how we sit,
-            talk and use cutlery.
+            Spending a meal is not merely eating. It is a tiny social ceremony in which we respect, put others at ease and depict our professionalism and upbringing. Individuals silently monitor our sitting position, way of talking and eating utensils.
           </p>
           <p className="text-sm">
-            Good dining etiquette helps us feel relaxed at formal dinners, business
-            meetings and family gatherings. It shows respect to the host, the
-            servers and every guest at the table.
+            Dining etiquette can make us feel at ease during formal dinners, business meetings and family meetings. It exhibits courtesy to the host, the wait staff as well as all the guests at the table.
           </p>
         </SectionCard>
 
         <SectionCard tone="emerald" title="Reading the place setting">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Modern tables often include several plates, glasses and utensils for
-              different courses.
+              Tables in the modern world are characterized by multiple dishes, glasses, and cutlery of various courses.
             </li>
             <li>
-              A simple rule is to{" "}
-              <span className="font-semibold">start from the outside and move in</span>{" "}
-              with each course.
+              One easy rule is to eat outwards and make her way in with every course.
             </li>
             <li>
-              In many settings (e.g. US style), the salad fork is placed furthest
-              on the left because salad usually arrives first.
+              In most places (e.g. US style), the salad fork is positioned as far left as possible since the salad is often the first served.
             </li>
             <li>
-              The charger or place plate mainly protects the tablecloth and
-              creates a neat, decorative base for other plates.
+              The charger or place plate primarily serves to shield the tablecloth and also forms an attractive and decorative undercarriage to other plates.
             </li>
           </ul>
         </SectionCard>
@@ -112,22 +102,16 @@ export default function Chapter9Section() {
         <SectionCard tone="slate" title="Bread & drinks – left or right?">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Make a lowercase <span className="font-semibold">“b”</span> with your left hand and
-              a <span className="font-semibold">“d”</span> with your right hand using thumb and
-              index finger.
+              Using thumb and index finger, make a lowercase b with your left hand and a d with your right hand.
             </li>
             <li>
-              This reminds you:{" "}
-              <span className="font-semibold">b = bread</span> on the left and{" "}
-              <span className="font-semibold">d = drink</span> on the right.
+              This is to remind you: b = bread and d = drink on the left and right respectively.
             </li>
             <li>
-              Break bread or rolls into small pieces. Butter only the piece you are
-              about to eat, instead of the whole roll at once.
+              Take bread or rolls and cut them into small ones. Butter your piece, not your roll in one go.
             </li>
             <li>
-              Salt and pepper are treated as a “couple”. Pass them together, held
-              by the base of the shakers.
+              Salt and pepper are considered to be a couple. Give them with each other, by the bottom of the shakers.
             </li>
           </ul>
         </SectionCard>
@@ -135,30 +119,23 @@ export default function Chapter9Section() {
         <SectionCard tone="amber" title="Napkins, soup & small details">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Wait for the host to unfold their napkin first. Then place yours
-              neatly on your lap – folded, not crumpled.
+              Wait till the host unfolds his or her napkin. and then put yours on your lap, not folded all to pieces.
             </li>
             <li>
-              In informal meals, leave your napkin to the left of your plate when
-              you step away. In formal events, place it on your chair.
+              When eating, in informal meals, leave your napkin on the left side of your plate in stepping out. On a formal occasion, put it on your chair.
             </li>
-            <li>Never use the napkin as a tissue or hide unwanted food in it.</li>
+            <li>Do not use the napkin as a tissue or conceal any undesirable food in it.</li>
             <li>
-              For soup, move the spoon gently{" "}
-              <span className="font-semibold">away from you</span>, avoiding
-              noise.
+              When working with soup, the spoon should be moved softly and noiselessly away.
             </li>
             <li>
-              Only drink soup directly from the cup when it is served in a small
-              cup and only clear broth remains.
+              One should only drink soup that has been served in a small cup and that has no more than clear broth left.
             </li>
             <li>
-              When you finish, place the spoon on the plate under the bowl, not
-              inside the empty bowl.
+              On completion, put the spoon on the plate underneath the bowl and not the empty bowl.
             </li>
             <li>
-              With lemon in tea, use one hand to squeeze and the other hand to
-              shield, so juice does not spray other guests.
+              When one uses lemon in tea, squeeze it with one hand and shield it with the other, otherwise the juice will spurt into other guests.
             </li>
           </ul>
         </SectionCard>
@@ -171,12 +148,10 @@ export default function Chapter9Section() {
             <h4 className="font-semibold mb-1 text-sm">Two main grips</h4>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>
-                <span className="font-semibold">Scalpel method</span> – knife or fork is held like
-                a surgeon’s scalpel, with tines facing down towards the plate.
+                <span className="font-semibold">Scalpel technique</span> – a knife or fork is held similar to a scalpel in the hands of a surgeon, with the tines downwards to the plate.
               </li>
               <li>
-                <span className="font-semibold">Pencil method</span> – held like a pencil, resting
-                comfortably between fingers.
+                <span className="font-semibold">Pencil method</span> – this is in form of a pencil and is placed in an easy manner between fingers.
               </li>
             </ul>
           </div>
@@ -185,14 +160,10 @@ export default function Chapter9Section() {
             <h4 className="font-semibold mb-1 text-sm">Two dining styles</h4>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>
-                <span className="font-semibold">Continental / European style:</span> cut food and
-                keep the fork in the left hand and knife in the right. Eat with
-                the fork tines facing down.
+                <span className="font-semibold">Continental/ European style:</span> slice food and hold the fork in the left hand and the knife in the right hand. Eat with a downward facing fork tines.
               </li>
               <li>
-                <span className="font-semibold">American style:</span> cut a few bites, place the
-                knife down, switch the fork to the right hand and eat with tines
-                facing up.
+                <span className="font-semibold">American style:</span> take some bites, put the knife aside, take the fork in the right hand and eat with tines up.
               </li>
             </ul>
           </div>
@@ -204,24 +175,19 @@ export default function Chapter9Section() {
         <SectionCard tone="slate" title="Good practice at the table">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Pass food, condiments, and salt and pepper to the right, unless the
-              person who asked is clearly on your left.
+              Bring food, condiments and salt and pepper to the right, unless the requesting party is evidently on your left.
             </li>
             <li>
-              If you notice hair or a foreign object in your food, quietly tell
-              the server and ask for a new plate.
+              In case of any hair or a foreign object in what you are eating, just inform the server and request another plate.
             </li>
             <li>
-              If the service is poor, speak calmly with the manager instead of
-              scolding the server.
+              Should the service be bad then talk to the manager and not yell at the server.
             </li>
             <li>
-              If you burp or sneeze, do it softly, cover your mouth and turn
-              slightly away. Do not draw attention to yourself.
+              In case you sneeze or burp, do it gently, covering the mouth, and turning away a bit. Do not attract attention to yourself.
             </li>
             <li>
-              When someone else makes a mistake, ignore it rather than correcting
-              them in front of the whole table.
+              When somebody does something wrong, do not cling on that but leave it alone instead of holding him/her responsible in front of the entire table.
             </li>
           </ul>
         </SectionCard>
@@ -229,24 +195,19 @@ export default function Chapter9Section() {
         <SectionCard tone="amber" title="Common mistakes to avoid">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Do not put used knives directly on the tablecloth. Rest them on the
-              plate instead.
+              Please, do not place knives that have been used on the table cloth. Instead rest them on the plate.
             </li>
             <li>
-              Avoid picking your teeth at the table or asking for a toothpick in
-              front of everyone. Go to the restroom if needed.
+              Do not pick your teeth or demand a tooth pick in the presence of others. Go to the restroom if needed.
             </li>
             <li>
-              Do not crawl under the table to collect dropped cutlery. Ask the
-              server for a clean replacement.
+              Do not creep on the floor under the table to pick up dropped knives and forks. Request the server to clean the replacement.
             </li>
             <li>
-              Do not move place cards around; the host has already arranged where
-              people should sit.
+              Do not shuffle place cards: the host has already decided where to sit people.
             </li>
             <li>
-              Do not leave just because you have finished eating. Wait until the
-              host clearly closes the meal.
+              There is no need to leave after you have eaten. Wait till the host has made it clear that the meal is finished.
             </li>
           </ul>
         </SectionCard>
@@ -254,36 +215,29 @@ export default function Chapter9Section() {
 
       {/* PART 5 – SIGNALS & ENDING THE MEAL */}
       <div className="grid md:grid-cols-2 gap-4 my-6">
-        <SectionCard tone="cyan" title="Cutlery signals – finished or still eating?">
+        <SectionCard tone="cyan" title="Cutlery signals – done or continuing to eat?">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              <span className="font-semibold">Not finished (European style):</span> utensils slightly
-              crossed, fork tines down, handles on opposite sides of the plate.
+              <span className="font-semibold">Not finished (European style):</span> knives and forks slightly crossed, the fork tines downwards, the handles facing different sides of the plate.
             </li>
             <li>
-              <span className="font-semibold">Not finished (American style):</span> knife and fork
-              form a small “V”, with handles resting on the same side.
+              <span className="font-semibold">Not finished (American style):</span> the knife and fork will cut a small V with the handles on the same side lying on the same side.
             </li>
             <li>
-              <span className="font-semibold">Finished (both styles):</span> place knife and fork
-              parallel at the “4:25” position on the plate, blade facing inward.
-              This quietly signals the server to clear your plate.
+              <span className="font-semibold">Finished (both forms):</span> knife and fork should be put in the plate (at position 4:25), with the blade turned toward the plate. This is a silent message to the waiter to empty your dish.
             </li>
           </ul>
         </SectionCard>
 
         <SectionCard tone="slate" title="Thank-you notes – closing with class">
           <p className="mb-2 text-sm">
-            A short, sincere thank-you note is a powerful way to complete the
-            experience, especially when someone has put effort into hosting a
-            formal meal or helping with an event.
+            A short and genuine note of thanks is a great way to end the experience and particularly when one has gone out of his/her way to host a formal meal or assist in an event.
           </p>
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Begin with a greeting and a clear “thank you”.</li>
-            <li>Mention something specific you enjoyed about the meal or event.</li>
+            <li>Start with a pleasant greeting and a definite thank you.</li>
+            <li>Talk about some particular detail you liked about the meal or event.</li>
             <li>
-              Send it as soon as you can – but even a late note is better than
-              saying nothing.
+              Send,--as soon as you can--but a late post is preferable to a letter which says nothing.
             </li>
           </ul>
         </SectionCard>
@@ -292,15 +246,7 @@ export default function Chapter9Section() {
       {/* Self-reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 09)">
         <p className="text-sm">
-          Before this lesson I only knew basic table manners. Now I understand
-          how small details like napkin placement, how I pass the salt and how I
-          hold my cutlery can shape the way others see me. I also realised that
-          good etiquette is less about showing off rules and more about making
-          everyone at the table feel comfortable. In future formal dinners and
-          company events, I will use the correct utensils, napkin rules and
-          “finished” signals more confidently. I also plan to send short
-          thank-you notes after important invitations to show appreciation and
-          professionalism.
+          Prior to this lesson I was familiar only with the simple manners at the table. Now I know that even minor things such as the placement of napkins, the manner in which I pass the salt and the manner in which I hold my cutlery can predetermine the perception of other people. I also understood that good etiquette does not focus on demonstrating the rules but making every person at the table feel at ease. I will be more confident using the right utensils, napkin regulations and cues on when to eat, as well as when to stop eating, in future formal dinners and company functions. I will also use short thank you messages upon sending important invitations to expressing gratitude and professionalism.
         </p>
       </SectionCard>
     </div>

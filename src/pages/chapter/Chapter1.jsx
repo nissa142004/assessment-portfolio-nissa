@@ -1,12 +1,11 @@
 // src/pages/chapter/Chapter1.jsx
-// Dark glass theme. Restructured layout, same concepts/content in simpler wording + image section.
+// Dark glass theme. Same layout, chapter text replaced with your exact content.
 
 import React from "react";
 
-
 // If you already use ChapterLayout, uncomment the next line and wrap <Chapter1Section /> below with it.
 // import ChapterLayout from "../../layouts/ChapterLayout.jsx";
-import c1 from "../../assets/c1.jpg"; 
+import c1 from "../../assets/c1.jpg";
 
 const chips = [
   "Professional skills",
@@ -146,9 +145,9 @@ export default function Chapter1Section() {
           Introduction to Professional Skills
         </h1>
         <p className="mt-2 text-slate-300 max-w-2xl">
-          This chapter gives a quick overview of professional skills, how they
-          connect with our values and behaviour, and ends with my own
-          self-reflection.
+          This chapter provides a brief summary of employability skills, their
+          relationship to our values and behavior, and ends with my own
+          reflection.
         </p>
 
         {/* Chips */}
@@ -159,131 +158,135 @@ export default function Chapter1Section() {
         </div>
       </header>
 
-      {/* PART 1 – What professional skills are */}
+      {/* PART 1 – Professional / Employability Skills */}
       <div className="grid md:grid-cols-2 gap-4 mb-6">
-        <SectionCard
-          tone="cyan"
-          title="Professional / Employability Skills – in simple words"
-        >
+        <SectionCard tone="cyan" title="Professional / Employability Skills - simply put.">
           <p>
-            Professional or employability skills are{" "}
-            <span className="font-semibold">people-focused abilities</span> that
-            help us work well with others. They are{" "}
-            <span className="font-semibold">transferable</span>, which means we
-            can use them in many different kinds of jobs and life situations.
+            Professional skills or employability skills are inter-personal
+            skills which enable us to get along with people. They can be
+            transferred and this implies that we can apply them in numerous
+            types of jobs and life circumstances.
           </p>
-          <ul className="list-disc pl-5 mt-2">
+          <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>Communication</li>
             <li>Teamwork &amp; collaboration</li>
-            <li>Problem-solving &amp; critical thinking</li>
+            <li>Problem solving and critical thinking.</li>
             <li>Adaptability &amp; flexibility</li>
             <li>Time management</li>
             <li>Leadership</li>
           </ul>
         </SectionCard>
 
-        <SectionCard tone="emerald" title="Types of skills at the workplace">
-          <ul className="list-disc pl-5 space-y-1">
+        <SectionCard tone="emerald" title="Skills in the work place.">
+          <ul className="list-disc pl-5 space-y-2">
             <li>
-              <span className="font-semibold">Technical skills:</span> the
-              tools, software and methods needed for a specific job (for
-              example, coding languages or lab techniques).
+              Technical skills: the equipment, programs and procedures required
+              in a certain work (such as the coding languages or laboratory
+              techniques).
             </li>
             <li>
-              <span className="font-semibold">Soft skills:</span> how we talk,
-              listen, behave ethically and work with others.
+              Soft skills: the way we speak, hear, act good and collaborate with
+              other people.
             </li>
             <li>
-              <span className="font-semibold">Transferable skills:</span>{" "}
-              abilities that are valuable in any job, such as analysing a
-              problem, planning tasks, or staying organised.
+              Transferable skills: skills that are useful in any work,
+              including solving a problem, organising tasks or remaining
+              organized.
             </li>
           </ul>
         </SectionCard>
       </div>
 
-      {/* PART 2 – Image + real-life connection */}
-      {/* PART 2 – Image + real-life connection */}
-<SectionCard
-  tone="slate"
-  title="In-class moment – connecting theory to our own experience"
->
-  <div className="grid md:grid-cols-[1.4fr,1fr] gap-4 items-center">
-    <div className="text-sm md:text-base text-slate-100/90">
-      In our first lesson we shared examples from group projects,
-      volunteering, and part-time work and linked them to professional
-      skills like teamwork, time management and leadership. This made me
-      realise that I already practise many of these skills in everyday
-      life, not only in a future job. The photo here represents that kind
-      of discussion and group learning atmosphere.
-    </div>
+      {/* PART 2 – In-class moment */}
+      <SectionCard
+        tone="slate"
+        title="In-class moment In-class moment- Relating theory to our personal experience."
+      >
+        <div className="grid md:grid-cols-[1.4fr,1fr] gap-4 items-center">
+          <div className="text-sm md:text-base text-slate-100/90 space-y-2">
+            <p>
+              During our first lesson we gave examples of group projects,
+              volunteering and part-time jobs and connected them with such
+              professional skills as teamwork, time management, and leadership.
+              This made me aware of the fact that I already apply most of these
+              skills in my day to day life, not just in my future career.
+            </p>
+            <p>Students talking about professional competencies in the classroom.</p>
+          </div>
 
-    {/* 🔽 UPDATE THIS PART ONLY */}
-    <div className="flex items-center justify-center">
-      <img
-        src={c1}
-        alt="Students discussing professional skills during class"
-        className="w-40 sm:w-52 md:w-60 lg:w-64 h-auto rounded-2xl
-                   border border-slate-600/70 bg-slate-900/60 shadow-lg"
-      />
-    </div>
-    {/* 🔼 UPDATE THIS PART ONLY */}
-  </div>
-</SectionCard>
+          <div className="flex items-center justify-center">
+            <img
+              src={c1}
+              alt="Students talking about professional competencies in the classroom."
+              className="w-40 sm:w-52 md:w-60 lg:w-64 h-auto rounded-2xl border border-slate-600/70 bg-slate-900/60 shadow-lg"
+            />
+          </div>
+        </div>
+      </SectionCard>
 
-
-      {/* PART 3 – Values, beliefs, attitudes, character */}
+      {/* PART 3 – Values, Beliefs, Attitudes, Character */}
       <div className="mt-6 space-y-4 mb-6">
-        <SectionCard title="Values, Beliefs, Attitudes & Character – what drives our behaviour">
-          <p className="mb-2">
-            These four areas together explain <em>why</em> we respond in certain
-            ways at university, at work, and in our personal lives.
+        <SectionCard
+          title="Values, Beliefs, Attitudes & Character - the motivation of our behaviour."
+        >
+          <p className="mb-3">
+            All these four areas combined are the reason why we behave in right
+            ways at university, work and in our personal lives.
           </p>
+
           <div className="grid md:grid-cols-2 gap-4">
+            {/* Values */}
             <div>
               <h4 className="font-semibold mb-1 text-emerald-100">Values</h4>
               <p className="mb-2 text-slate-100/90">
-                Deep principles that influence our choices – like an inner moral
-                compass.
+                Strong values that influence our decisions - such as a sense of
+                morals.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm text-slate-100/90">
                 <li>Honesty, Integrity, Respect</li>
-                <li>Responsibility, Compassion, Fairness</li>
+                <li>Accountability, Generosity, Justice.</li>
                 <li>Courage, Excellence</li>
               </ul>
             </div>
+
+            {/* Beliefs */}
             <div>
               <h4 className="font-semibold mb-1 text-cyan-100">Beliefs</h4>
               <p className="mb-2 text-slate-100/90">
-                Ideas we hold about ourselves, other people and the world.
+                Concepts we have of ourselves, those of other people and the
+                world.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm text-slate-100/90">
-                <li>Self-efficacy, Growth mindset, Optimism</li>
+                <li>Self-efficacy, Growth mindset and Optimism.</li>
                 <li>Locus of control, Self-worth</li>
-                <li>Prejudices, Fatalism (which we need to challenge)</li>
+                <li>Bigotry, Fatalism (and this is what we must fight).</li>
               </ul>
             </div>
+
+            {/* Attitudes */}
             <div>
               <h4 className="font-semibold mb-1 text-amber-100">Attitudes</h4>
               <p className="mb-2 text-slate-100/90">
-                Positive or negative tendencies that colour how we respond to
-                people and situations.
+                Good or bad things that colour our reaction in response to
+                people and things.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm text-slate-100/90">
-                <li>Positive attitude, Open-mindedness, Tolerance</li>
+                <li>Positive attitude, Tolerance, Open-mindedness.</li>
                 <li>Confidence, Empathy</li>
                 <li>Avoid: prejudice, cynicism</li>
               </ul>
             </div>
+
+            {/* Character */}
             <div>
               <h4 className="font-semibold mb-1 text-indigo-100">Character</h4>
               <p className="mb-2 text-slate-100/90">
-                The pattern of our behaviour over time – who we are when no one
-                is watching.
+                The trend of our behaviour with the passage of time- what we
+                become when we are alone.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm text-slate-100/90">
                 <li>Trustworthiness, Respectfulness</li>
-                <li>Responsibility, Caring, Citizenship</li>
+                <li>Caring, Citizenship, Responsibility.</li>
                 <li>Fairness, Courage</li>
               </ul>
             </div>
@@ -291,56 +294,45 @@ export default function Chapter1Section() {
         </SectionCard>
 
         {/* PART 4 – Johari Window */}
-        <SectionCard tone="violet" title="Johari Window – a tool for self-awareness (1955)">
-          <p className="mb-2">
-            The Johari Window is a small model that helps us think about how
-            much of ourselves we share and how much we still need to discover.
+        <SectionCard
+          tone="violet"
+          title="A self-awareness tool (1955) Johari Window."
+        >
+          <p className="mb-3">
+            This little strycture is called the Johari Window and assists us in
+            reflecting on the extent of sharing our selves and how much more is
+            yet to be discovered.
           </p>
           <ul className="list-disc pl-5 space-y-1 text-slate-100/90">
-            <li>
-              <span className="font-semibold">Open:</span> things I know about
-              myself and others also know.
-            </li>
-            <li>
-              <span className="font-semibold">Blind:</span> things others notice
-              in me but I am not aware of yet.
-            </li>
-            <li>
-              <span className="font-semibold">Hidden:</span> things I know but
-              choose not to show.
-            </li>
-            <li>
-              <span className="font-semibold">Unknown:</span> parts of me that
-              neither I nor others have discovered yet.
-            </li>
+            <li>Open: information about other people and myself.</li>
+            <li>Blind: things people see in me but I do not.</li>
+            <li>Hidden: things I am aware of, but I do not display them.</li>
+            <li>Unknown: the things that that me or other people do not know.</li>
           </ul>
           <p className="mt-2 text-slate-100/90">
-            The goal is to slowly grow the{" "}
-            <span className="font-semibold">Open</span> area by sharing
-            appropriately and being open to feedback from other people.
+            The aim is the progressive expansion of Open area through sharing
+            and openness to the other people and their feedback.
           </p>
         </SectionCard>
 
-        {/* PART 5 – Developing skills */}
-        <SectionCard tone="slate" title="Ways to grow professional skills">
+        {/* PART 5 – Professional growth ways */}
+        <SectionCard tone="slate" title="Professional growth ways.">
           <ul className="list-disc pl-5 space-y-1 text-slate-100/90">
             <li>
-              <span className="font-semibold">Keep learning:</span> join short
-              courses, watch tutorials, attend workshops and talks.
+              Continue education: enroll in short courses, tutorials,
+              workshops.
             </li>
             <li>
-              <span className="font-semibold">Practice in real tasks:</span>{" "}
-              use these skills in projects, clubs, volunteering and part-time
-              jobs.
+              Application in actual work: apply these skills in projects, clubs,
+              volunteering and part-time work.
             </li>
             <li>
-              <span className="font-semibold">Ask for feedback:</span> talk to
-              friends, lecturers and mentors and try out their suggestions.
+              Request feedback: discuss with friends, lecturers and mentors and
+              implement their advice.
             </li>
             <li>
-              <span className="font-semibold">Take on challenges:</span> say yes
-              to new responsibilities and reflect afterwards on what went well
-              and what needs work.
+              Push yourself: accept new challenges and use the opportunity to
+              look back on what was good and what should be improved.
             </li>
           </ul>
         </SectionCard>
@@ -349,18 +341,16 @@ export default function Chapter1Section() {
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 01)">
         <p className="text-slate-100/90">
-          This chapter helped me see that professional skills are just as
-          important as technical knowledge. When communication, teamwork and
-          time management are strong, projects feel smoother and less stressful.
-          I also noticed a few blind spots in how I react when I am under
-          pressure. From now on, I want to practise clearer writing, take more
-          active roles in group work, and regularly ask for feedback so that my
-          “Open” area in the Johari Window becomes bigger over time.
+          The chapter made me realize that professional skills are not inferior
+          to technical knowledge When the communication, teamwork and time
+          management are good, the projects turn easier and less stressful. I
+          also did not find many blind spots in my reaction towards being under
+          pressure. Henceforth, I would like to write more clearly, participate
+          more actively in teamwork, and often request feedback to ensure the
+          sphere of the Open type in my Johari Window will be expanded with
+          time.
         </p>
       </SectionCard>
-
-      {/* References (short format) */}
-
     </div>
   );
 }

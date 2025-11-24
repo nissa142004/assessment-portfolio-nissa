@@ -77,13 +77,13 @@ export default function Chapter7Section() {
           time pressure.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
-          {[
-            "Event planning",
-            "Menu & pricing",
-            "Roles",
-            "Crowd handling",
-            "Sales",
-            "Reflection",
+          {[ 
+            "Event planning", 
+            "Menu & pricing", 
+            "Roles", 
+            "Crowd handling", 
+            "Sales", 
+            "Reflection"
           ].map((c) => (
             <Chip key={c} label={c} />
           ))}
@@ -94,17 +94,17 @@ export default function Chapter7Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="cyan" title="Objectives">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Plan and operate a stall together as a team.</li>
-            <li>Practise budgeting, pricing, and cash handling in real time.</li>
-            <li>Serve customers quickly and politely while keeping good hygiene.</li>
+            <li>Manage and work a stall in a team.</li>
+            <li>Training on real time budgeting, pricing and handling cash.</li>
+            <li>Attend to customers in a hurry but in a polite manner and maintain a good hygiene.</li>
           </ul>
         </SectionCard>
         <SectionCard tone="emerald" title="Roles & tasks">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Lead & cash: set prices, track sales, and manage change.</li>
-            <li>Food prep: sauces, buns, assembly, and packaging.</li>
-            <li>Front desk: greeting, taking orders, and controlling the flow.</li>
-            <li>Logistics: stock, ice, cleaning, and photos/documentation.</li>
+            <li>Lead and cash: establish prices, sales and change.</li>
+            <li>Food preparation: sauces, buns, and assembly, food packaging.</li>
+            <li>Front desk: welcoming, order taking and managing of the traffic.</li>
+            <li>Logistics: inventory, ice, cleaning and photos/documentation.</li>
           </ul>
         </SectionCard>
       </div>
@@ -168,16 +168,16 @@ export default function Chapter7Section() {
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard tone="emerald" title="What went well">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Attractive booth branding and strong team energy drew a crowd.</li>
-            <li>Fast “assembly line” style made serving speed much better.</li>
-            <li>Clear roles helped reduce confusion during peak rush periods.</li>
+            <li>Beautiful booth branding and high energy in the team attracted the crowd.</li>
+            <li>Serving speed was made considerably faster with fast “assembly line style.</li>
+            <li>Having well-defined roles decreased the confusion when it happened during high rush hours.</li>
           </ul>
         </SectionCard>
         <SectionCard tone="amber" title="What to improve next time">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Prepare more change and pre-slice ingredients earlier.</li>
-            <li>Improve queue management; display a printed menu with prices.</li>
-            <li>Track sales and stock with a small sheet or simple app.</li>
+            <li>Make more transformation and cut ingredients in advance.</li>
+            <li>Better queue arrangements; post a printed menu and prices.</li>
+            <li>Monitor sales and inventory using a small sheet or simple application.</li>
           </ul>
         </SectionCard>
       </div>
@@ -185,11 +185,9 @@ export default function Chapter7Section() {
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 07)">
         <p>
-          This event taught me real teamwork and customer service. I had to handle pressure,
-          speak clearly with customers, and adjust prices and stock on the spot. Next time,
-          I will create a checklist before the event, define roles more clearly, and use a
-          simple tracker for sales and expenses so that our planning and evaluation are even
-          stronger.
+          This was a lesson on the actual teamwork and customer service. I was obliged to withstand pressure,
+          talk to the customers in a proper way, and change prices and inventories on the spot. The following time,
+          I will design a checklist prior to the event, define roles better, and a basic sales and expenses tracker in order to make our planning and assessment even more effective.
         </p>
       </SectionCard>
     </div>

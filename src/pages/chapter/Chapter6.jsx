@@ -69,15 +69,13 @@ export default function Chapter6Section() {
           <div>
             <h4 className="font-semibold mb-1 text-cyan-100">What is a project?</h4>
             <p className="text-sm md:text-base">
-              A project is a set of linked activities with a goal, a fixed timeline, a team, and limited resources.
-              It usually moves through a cycle: idea → design → finance → implement → evaluate.
+              A project is simply a collection of connected actions that have an objective, a tight deadline, a team, as well as scarce resources. It tends to follow a cycle, idea, design, finance, implement, evaluate.
             </p>
           </div>
           <div>
             <h4 className="font-semibold mb-1 text-cyan-100">What is a proposal?</h4>
             <p className="text-sm md:text-base">
-              The proposal is the written version of this plan. It explains the problem, your solution, who will
-              benefit, the work plan, the team, the budget, and how you will measure success at the end.
+              This plan is in form of a proposal. It describes the problem, your solution, who will benefit, the plan of work, the team, the budget and you will never be able to measure success at the end.
             </p>
           </div>
         </div>
@@ -88,26 +86,22 @@ export default function Chapter6Section() {
         <SectionCard tone="amber" title="External vs Internal proposals">
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              <span className="font-semibold">External proposals</span> – used to bid for contracts or grants. They
-              usually include an executive summary, management section, and financials.
+              <span className="font-semibold">External proposals</span> – used to offer contracts or grants. They typically consist of executive summary, management section and financials.
             </li>
             <li>
-              <span className="font-semibold">Internal proposals</span> – used inside an organisation to convince
-              decision-makers to support an idea.
+              <span className="font-semibold">Internal proposals</span> – used within an organisation to make decision-makers agree with an idea.
             </li>
           </ul>
           <p className="text-sm mt-2">
-            For internal proposals, think carefully about the audience, visual layout, and the 4 questions:{" "}
-            <span className="font-semibold">What is the problem?</span> What solution do you suggest? Can we implement
-            it? Should we implement it now?
+            Regarding internal proposals, put a lot of consideration on the audience, the visual layout as well as the 4 questions: What is the problem? What solution do you suggest? Can we implement it? Should we implement it now?
           </p>
         </SectionCard>
 
         <SectionCard tone="slate" title="Before you write – preparation">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Talk to beneficiaries and review earlier proposals or evaluation reports.</li>
-            <li>Check existing data, consult experts, or run a quick survey/focus group.</li>
-            <li>Decide on indicators early – what will count as proof that the project worked?</li>
+            <li>Discussion with beneficiaries and examination of previous suggestions or assessment reports.</li>
+            <li>Check available data, seek the advice of specialists or conduct a survey/focus group.</li>
+            <li>Choose indicators in advance - what is going to be considered evidence that the project was successful?</li>
           </ul>
         </SectionCard>
       </div>
@@ -116,150 +110,52 @@ export default function Chapter6Section() {
       <SectionCard tone="emerald" title="Proposal structure – simple template">
         <ol className="list-decimal pl-5 space-y-1">
           <li>
-            <span className="font-semibold">Title &amp; Abstract</span> – short summary of the problem, main
-            objectives, key activities, and a quick budget snapshot.
+            <span className="font-semibold">Title and Abstract</span> – overview of the problem, core objectives, core activities and a brief budget overview.
           </li>
           <li>
-            <span className="font-semibold">Context &amp; Justification</span> – background, data, and why the project
-            is needed.
+            <span className="font-semibold">Background, Data, and Reasoning</span> – Why the project is required.
           </li>
           <li>
-            <span className="font-semibold">Problem → Objectives</span> – one main goal, clear measurable objectives,
-            and a defined target group.
+            <span className="font-semibold">Problem → Objectives</span> – one primary objective, objectives that can be clearly measured and a target population.
           </li>
           <li>
-            <span className="font-semibold">Methods &amp; Activities</span> – what exactly you will do to reach each
-            objective.
+            <span className="font-semibold">Methods & Activities</span> – what specifically will you do to achieve each goal.
           </li>
           <li>
-            <span className="font-semibold">Implementation plan</span> – timeline, responsibilities, and key
-            milestones.
+            <span className="font-semibold">Implementation plan</span> – schedule, duties and milestones.
           </li>
           <li>
-            <span className="font-semibold">Resource plan &amp; Budget</span> – direct costs vs. operational/overhead
-            costs, and any expected income.
+            <span className="font-semibold">Resource plan & Budget</span> – direct costs/ operational costs/ overhead costs, and any anticipated revenues.
           </li>
           <li>
-            <span className="font-semibold">Management &amp; Team</span> – who is involved, partner roles, and capacity.
+            <span className="font-semibold">Team</span> – team members, management roles, and capacity.
           </li>
           <li>
-            <span className="font-semibold">Monitoring &amp; Evaluation (M&amp;E)</span> – indicators, data sources,
-            and reporting schedule.
+            <span className="font-semibold">Monitoring & Evaluation (M&E)</span> – indicators, sources of data, reporting schedule.
           </li>
           <li>
-            <span className="font-semibold">Annexes</span> – CVs, detailed data tables, charts, forms, or letters of
-            support.
+            <span className="font-semibold">Annexes</span> – CVs, more detailed data tables, charts, forms or letters of support.
           </li>
         </ol>
       </SectionCard>
-
-      {/* Activity & Resource planning (two-column) */}
-      <div className="grid md:grid-cols-2 gap-4 my-6">
-        <SectionCard tone="cyan" title="Activity plan (mini example)">
-          <div className="overflow-x-auto rounded-xl border border-slate-700/70 bg-slate-950/50">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-slate-900/70">
-                <tr>
-                  <th className="p-2">Activity</th>
-                  <th className="p-2">Start</th>
-                  <th className="p-2">End</th>
-                  <th className="p-2">Owner</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t border-slate-700/70">
-                  <td className="p-2">Needs assessment &amp; data</td>
-                  <td className="p-2">Week 1</td>
-                  <td className="p-2">Week 2</td>
-                  <td className="p-2">Coordinator</td>
-                </tr>
-                <tr className="border-t border-slate-700/70">
-                  <td className="p-2">Design solution &amp; partners</td>
-                  <td className="p-2">Week 2</td>
-                  <td className="p-2">Week 3</td>
-                  <td className="p-2">Team</td>
-                </tr>
-                <tr className="border-t border-slate-700/70">
-                  <td className="p-2">Implementation sprint 1</td>
-                  <td className="p-2">Week 4</td>
-                  <td className="p-2">Week 6</td>
-                  <td className="p-2">Leads</td>
-                </tr>
-                <tr className="border-t border-slate-700/70">
-                  <td className="p-2">Monitoring &amp; mid review</td>
-                  <td className="p-2">Week 6</td>
-                  <td className="p-2">Week 6</td>
-                  <td className="p-2">M&amp;E</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs mt-2 text-slate-200/80">
-            Tip: a simple Gantt chart can also show overlaps and dependencies between activities.
-          </p>
-        </SectionCard>
-
-        <SectionCard tone="amber" title="Resource plan (cost outline)">
-          <div className="overflow-x-auto rounded-xl border border-amber-500/40 bg-slate-950/50">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-amber-900/40">
-                <tr>
-                  <th className="p-2">Item</th>
-                  <th className="p-2">Unit</th>
-                  <th className="p-2">Qty</th>
-                  <th className="p-2">Unit cost</th>
-                  <th className="p-2">Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t border-amber-500/30">
-                  <td className="p-2">Venue / Logistics</td>
-                  <td className="p-2">day</td>
-                  <td className="p-2">1</td>
-                  <td className="p-2">—</td>
-                  <td className="p-2">—</td>
-                </tr>
-                <tr className="border-t border-amber-500/30">
-                  <td className="p-2">Materials / Printing</td>
-                  <td className="p-2">lot</td>
-                  <td className="p-2">1</td>
-                  <td className="p-2">—</td>
-                  <td className="p-2">—</td>
-                </tr>
-                <tr className="border-t border-amber-500/30">
-                  <td className="p-2">Team time (allowances)</td>
-                  <td className="p-2">hours</td>
-                  <td className="p-2">—</td>
-                  <td className="p-2">—</td>
-                  <td className="p-2">—</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs mt-2 text-slate-200/80">
-            Make sure you cover both direct costs (linked to activities) and operational costs (overheads).
-          </p>
-        </SectionCard>
-      </div>
 
       {/* Indicators & M&E */}
       <div className="grid md:grid-cols-2 gap-4 my-6">
         <SectionCard tone="slate" title="Indicators – make them specific">
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>
-              Think about: quality (what change), target group (who), place (where), quantity (how much), and time (by
-              when).
+              Reflect on: the quality (what change), target group (who), place (where), quantity (how much), and time (by when).
             </li>
             <li>
-              Example: “Ticket sales reach 500 by 18 Oct and average satisfaction score is at least 4/5.”
+              Example: “Ticket sales exceed 500 within 18 Oct and the average satisfaction level is at least 4/5.”
             </li>
           </ul>
         </SectionCard>
         <SectionCard tone="emerald" title="Monitoring & reporting">
           <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>Compare progress against your timeline and budget, at least monthly.</li>
-            <li>Collect data such as counts, surveys, photos, and receipts.</li>
-            <li>Have a reporting schedule: mid-term review, final report, and annexes.</li>
+            <li>Compare the progress to your schedule and budget, at least monthly.</li>
+            <li>Gather information including numbers, questionnaires, images, and invoices.</li>
+            <li>Have a reporting timetable: mid-term review, final report, and annexes.</li>
           </ul>
         </SectionCard>
       </div>
@@ -268,8 +164,7 @@ export default function Chapter6Section() {
       <SectionCard tone="cyan" title="Evaluation report – food-fest style outline">
         <ol className="list-decimal pl-5 space-y-1">
           <li>
-            <span className="font-semibold">Executive summary</span> – short note of objectives, main results, and key
-            takeaways.
+            <span className="font-semibold">Executive summary</span> – short note of objectives, main results, and key takeaways.
           </li>
           <li>
             <span className="font-semibold">Objectives &amp; goals</span> – what you planned to achieve.
@@ -315,7 +210,7 @@ export default function Chapter6Section() {
           <ul className="list-disc pl-5 space-y-1 text-sm">
             <li>Total expenses: ______</li>
             <li>Total revenue / income: ______</li>
-            <li>Profit or Loss: revenue − expenses = ______</li>
+            <li>Profit or Loss: revenue − costs = ______</li>
           </ul>
         </SectionCard>
       </div>
@@ -323,12 +218,7 @@ export default function Chapter6Section() {
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 06)">
         <p>
-          This chapter helped me connect each part of a project: from the problem, to objectives, to activities, and
-          finally to budget and indicators. I now see how important it is to plan monitoring and evaluation from the
-          beginning, not only at the end. For my next project, I will first write a one-page proposal, then expand it
-          into a full document with an activity and resource plan. I will keep all receipts and survey results so that I
-          can compare estimated vs. actual budget and write a strong evaluation report with at least three clear
-          lessons and actions for improvement.
+          In this chapter, I was able to relate every element of a project, starting with the problem, then objectives, activities and lastly, budget and indicators. Now I understand how crucial it is to plan monitoring and evaluation at the outset, as well as at the end. In my future project, I will write one-page proposal, develop it to a full project with an activity and resource plan. I will maintain all the receipts and the results that were given in the surveys so that I will be able to compare the estimated and actual budget and compose a great evaluation report with at least three clear lessons and improvement measures.
         </p>
       </SectionCard>
     </div>

@@ -9,23 +9,23 @@ import Chapter7Section from "./pages/chapter/Chapter7.jsx";
 import Chapter8Section from "./pages/chapter/Chapter8.jsx";
 import Chapter9Section from "./pages/chapter/Chapter9.jsx";
 import Chapter10Section from "./pages/chapter/Chapter10.jsx";
-import Chapter11Section from "./pages/chapter/Chapter11.jsx";
+// import Chapter11Section from "./pages/chapter/Chapter11.jsx";
 
 // 🌑 Dark transparent theme + Top Navigation Layout
 export default function AssessmentPortfolio() {
   const chapters = useMemo(
     () => [
       { id: "ch1", title: "Introduction to Professional Skills", body: sampleIntro },
-      { id: "ch2", title: "CV & Cover Letter", body: "Clear goals, roles, and communication make teamwork effective." },
-      { id: "ch3", title: "Communication Skills", body: "7Cs: clear, concise, concrete, correct, coherent, complete, courteous." },
-      { id: "ch4", title: "Leadership & Ethics", body: "Leadership blends vision with responsibility." },
-      { id: "ch5", title: "Problem Solving", body: "Fishbone, 5-Whys, Pareto analysis help in solving problems." },
-      { id: "ch6", title: "Time Management", body: "Prioritize tasks, use Pomodoro and time-boxing." },
-      { id: "ch7", title: "Emotional Intelligence", body: "Self-awareness, empathy, self-regulation, motivation." },
-      { id: "ch8", title: "Interview Prep", body: "STAR answers, mock interviews, portfolio evidence." },
-      { id: "ch9", title: "CV & Cover Letter", body: "Tailored summary, achievement-focused bullet points." },
-      { id: "ch10", title: "Dining & Etiquette", body: "Professional behaviour in formal settings." },
-      { id: "ch11", title: "Research Writing", body: "Plagiarism-free writing, citations, sources." },
+      { id: "ch2", title: "CV & Cover Letter", body: "/." },
+      { id: "ch3", title: "Job Hunting & Interview Skills", body: "/" },
+      { id: "ch4", title: "Portfolio Management", body: "/" },
+      { id: "ch5", title: "Meetings & Speaking Skills", body: "/" },
+      { id: "ch6", title: "Project Proposal Writing & Evaluation", body: "/" },
+      { id: "ch7", title: "Food Festival – Ralahami Kadée", body: "/" },
+      { id: "ch8", title: "Emotional Intelligence (EI)", body: "/" },
+      { id: "ch9", title: "Dining Etiquette & Table Manners", body: "/" },
+      { id: "ch10", title: "Email & Online Etiquette", body: "Professional behaviour in formal settings." },
+      // { id: "ch11", title: "Research Writing", body: "Plagiarism-free writing, citations, sources." },
     ],
     []
   );
@@ -221,13 +221,13 @@ export default function AssessmentPortfolio() {
             );
           }
 
-          if (c.id === "ch11") {
-            return (
-              <article key="ch11" id="ch11" ref={setRef} className={cardClasses}>
-                <Chapter11Section />
-              </article>
-            );
-          }
+          // if (c.id === "ch11") {
+          //   return (
+          //     <article key="ch11" id="ch11" ref={setRef} className={cardClasses}>
+          //       <Chapter11Section />
+          //     </article>
+          //   );
+          // }
 
           // Fallback (not really used)
           return (

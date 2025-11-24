@@ -8,8 +8,6 @@ import imgPortfolioTypes from "../../assets/c4.jpg"; // Portfolio types
 import imgPEAKS from "../../assets/c44.png"; // PEAKS checklist
 import imgNegotiation from  "../../assets/c55.png"; // Negotiation
 
-
-
 const chips = [
   "Portfolio types",
   "PEAKS",
@@ -57,8 +55,7 @@ export default function Chapter4Section() {
           Portfolio Management
         </h1>
         <p className="mt-2 text-slate-300">
-          How to build a portfolio that shows the real you, is organised clearly, and can be adapted
-          for different study or career goals.
+          What to include in a portfolio to reflect you in the real world, arrange in a logical, and redefinable way as needed.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {chips.map((c) => (
@@ -71,9 +68,7 @@ export default function Chapter4Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="cyan" title="What is a portfolio?">
           <p>
-            A portfolio is a structured collection that presents{" "}
-            <span className="font-semibold">who you are, what you can do, and what you have achieved</span>.
-            It should feel authentic and give a true picture of you, not a fake version.
+            Portfolio is a structured presentation of who you are, what you do and what you have accomplished. It must be real and provide the real image of you, not a perfect one.
           </p>
           <div className="mt-12 flex justify-center">
             <img
@@ -85,9 +80,9 @@ export default function Chapter4Section() {
         </SectionCard>
         <SectionCard tone="emerald" title="Why keep one?">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Helps you stand out and back up your claims with real proof.</li>
-            <li>Makes invisible strengths like teamwork or leadership visible.</li>
-            <li>Builds confidence and creates a bridge to new opportunities.</li>
+            <li>Assists you to be distinctive and support your statements with actual evidence.</li>
+            <li>Brings the invisible forces such as teamwork or leadership to sight.</li>
+            <li>Develops self-confidence and opens a new avenue.</li>
           </ul>
           <div className="mt-4 flex justify-center">
             <img
@@ -103,125 +98,90 @@ export default function Chapter4Section() {
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         <SectionCard tone="amber" title="Types of portfolios">
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-              <span className="font-semibold">Personal</span> – shows creativity, interests, and style.
-            </li>
-            <li>
-              <span className="font-semibold">Career / Dossier</span> – CV, letters, awards, and records.
-            </li>
-            <li>
-              <span className="font-semibold">Employment</span> – work samples, performance reviews, training.
-            </li>
-            <li>
-              <span className="font-semibold">Assessment</span> – tracks your learning and progress over time.
-            </li>
+            <li><span className="font-semibold">Personal</span> – demonstrates innovativeness, hobbies and flair.</li>
+            <li><span className="font-semibold">Career / Dossier</span> – CV, letters, awards and records.</li>
+            <li><span className="font-semibold">Employment</span> – work samples, performance reviews, training.</li>
+            <li><span className="font-semibold">Assessment</span> – monitors your learning and development.</li>
           </ul>
         </SectionCard>
         <SectionCard tone="emerald" title="PEAKS checklist">
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-              <span className="font-semibold">P</span>ersonal characteristics
-            </li>
-            <li>
-              <span className="font-semibold">E</span>xperience
-            </li>
-            <li>
-              <span className="font-semibold">A</span>ccomplishments
-            </li>
-            <li>
-              <span className="font-semibold">K</span>nowledge
-            </li>
-            <li>
-              <span className="font-semibold">S</span>kills
-            </li>
+            <li><span className="font-semibold">P</span>ersonal characteristics</li>
+            <li><span className="font-semibold">E</span>xperience</li>
+            <li><span className="font-semibold">A</span>ccomplishments</li>
+            <li><span className="font-semibold">K</span>nowledge</li>
+            <li><span className="font-semibold">S</span>kills</li>
           </ul>
           <p className="mt-2 text-sm text-slate-200/90">
-            Use PEAKS as a quick filter when you collect and select items for your portfolio.
+            Use PEAKS as a quick filter during the collection and selection of items to your portfolio.
           </p>
-          
         </SectionCard>
       </div>
 
       {/* Master vs Targeted (structure changed: combined card with two columns) */}
-{/* Master vs Targeted (structure changed: combined card with two columns) */}
-<SectionCard tone="slate" title="Master vs Targeted portfolios">
-  <div className="grid md:grid-cols-2 gap-4">
-    <div>
-      <h4 className="font-semibold mb-1 text-slate-50">Master portfolio – your archive</h4>
-      <ul className="list-disc pl-5 space-y-1 text-sm">
-        <li>Large collection of documents grouped using PEAKS.</li>
-        <li>
-          Includes bio data, people skills, learning skills, self-management, tasks, and community service.
-        </li>
-        <li>Recent evidence is very powerful; note gaps so you can build them later.</li>
-      </ul>  
-      
-    </div>
-    <div>
-      <h4 className="font-semibold mb-1 text-slate-50">Targeted portfolio – for a specific role</h4>
-      <ul className="list-disc pl-5 space-y-1 text-sm">
-        <li>Start by describing the opportunity honestly and clearly.</li>
-        <li>Identify which PEAKS the employer or assessor is really looking for.</li>
-        <li>Select only the items that directly prove you have those PEAKS.</li>
-      </ul>
-    </div>
-  </div>
-  <div className="mt-4 flex justify-center gap-20">  {/* Add gap-4 here */}
-        <img
-          src={imgNegotiation}
-          alt="Job hunting guide"
-          className="w-72 max-h-80 border-slate-600/70 bg-slate-900/60 shadow-lg"
-        />
-      </div>
-</SectionCard>
-
+      <SectionCard tone="slate" title="Master vs Targeted portfolios">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <h4 className="font-semibold mb-1 text-slate-50">Master portfolio – your vault</h4>
+            <ul className="list-disc pl-5 space-y-1 text-sm">
+              <li>Huge amount of documents clustered by PEAKS.</li>
+              <li>Includes bio data, people skills, learning skills, self-management, tasks and community service.</li>
+              <li>New evidence is extremely strong; mark the gaps so that you can add to them in the future.</li>
+            </ul>  
+          </div>
+          <div>
+            <h4 className="font-semibold mb-1 text-slate-50">Targeted portfolio – for a specific role</h4>
+            <ul className="list-disc pl-5 space-y-1 text-sm">
+              <li>Begin by giving an honest and clear description of the opportunity.</li>
+              <li>Find out what PEAKS the assessor or employer is actually seeking.</li>
+              <li>Only the items that will directly show that you have those PEAKS need to be selected.</li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-4 flex justify-center gap-20">
+          <img
+            src={imgNegotiation}
+            alt="Job hunting guide"
+            className="w-72 max-h-80 border-slate-600/70 bg-slate-900/60 shadow-lg"
+          />
+        </div>
+      </SectionCard>
 
       {/* Organizing & After */}
       <div className="grid md:grid-cols-2 gap-4 mb-6 mt-6">
         <SectionCard tone="violet" title="Organising your portfolio">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Cover page with name, date, professional photo, and contact details.</li>
-            <li>Table of contents and clear sections or tabs.</li>
-            <li>Keep everything tidy, accurate, and professional.</li>
-            <li>Add decoration or design only after the content is structured.</li>
+            <li>Cover page with name, date, professional photograph and contact information.</li>
+            <li>Headings and distinct or tabular sections.</li>
+            <li>Make everything clean, precise and professional.</li>
+            <li>Decoration or design should be added after structuring the contents.</li>
           </ul>
         </SectionCard>
         <SectionCard tone="emerald" title="After you build it">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Review and reflect: what improved, what is still missing?</li>
-            <li>Update regularly; use a binder or case if it is a physical copy.</li>
-            <li>When used for grading, make sure the assessment criteria are shared clearly.</li>
+            <li>Look back and reconsider: what did get better, what has been overlooked?</li>
+            <li>Keep it up to date; a binder or a case should be used in case it is a hard copy.</li>
+            <li>As a grading tool, be sure that the criteria of assessment are shared.</li>
           </ul>
         </SectionCard>
       </div>
 
       {/* Assessment portfolio + Reflection model in a new layout */}
       <div className="grid md:grid-cols-2 gap-4 mb-6">
-        <SectionCard tone="amber" title="Assessment portfolio – purpose & advantages">
+        <SectionCard tone="amber" title="Assessment portfolio – purpose & benefits">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Shows real work, growth, and how responsible the learner is.</li>
-            <li>Encourages reflective and creative learning, not just memorising.</li>
-            <li>Gives strong evidence for teacher–student discussions and decisions.</li>
-            <li>
-              Advantages: highlights progress, supports different learning styles, builds motivation and
-              meta-cognition, respects individual differences, and improves communication.
-            </li>
-            <li>Challenges: takes time to create and maintain; needs a lot of student involvement.</li>
+            <li>Demonstrates actual work, development and the level of accountability of the learner.</li>
+            <li>Promotes learning not only memorisation but also reflective and creative learning.</li>
+            <li>Provides good support of teacher-student discussions and decisions.</li>
+            <li>Pros: promotes development, encourages other learning styles, fosters motivation and meta-cognition, appreciates individuals, enhances communication.</li>
+            <li>Difficulties: time consuming to develop and sustain; requires much student participation.</li>
           </ul>
         </SectionCard>
         <SectionCard tone="cyan" title="Reflection model – What? So what? Now what?">
           <ol className="list-decimal pl-5 space-y-1">
-            <li>
-              <span className="font-semibold">What?</span> Describe the event or activity – what actually happened?
-            </li>
-            <li>
-              <span className="font-semibold">So what?</span> Explore meaning and feelings – what did you notice or
-              learn?
-            </li>
-            <li>
-              <span className="font-semibold">Now what?</span> Decide actions – how will you apply this learning next
-              time?
-            </li>
+            <li><span className="font-semibold">What?</span> Explain what happened or what did take place?</li>
+            <li><span className="font-semibold">So what?</span> Inquire about meaning and feelings, what did you see or get to know?</li>
+            <li><span className="font-semibold">Now what?</span> Make decisions - what will you do with this learning in the future?</li>
           </ol>
         </SectionCard>
       </div>
@@ -229,23 +189,19 @@ export default function Chapter4Section() {
       {/* Platforms */}
       <SectionCard tone="slate" title="Popular platforms for digital portfolios">
         <p className="mb-2">
-          Choose one or two main formats and keep them updated instead of spreading work everywhere.
+          Select one or two large formats and maintain them regularly as opposed to scattering work all over.
         </p>
         <ul className="list-disc pl-5 space-y-1 text-sm">
-          <li>LinkedIn, GitHub Pages (for developers), WordPress, Google Sites</li>
-          <li>Behance, Adobe Portfolio (for creative work), Wix, Squarespace</li>
-          <li>Personal blogs/websites, or simple PPT/PDF versions for quick sharing</li>
+          <li>LinkedIn, GitHub Pages (as a developer), WordPress, Google Sites.</li>
+          <li>Behance, Adobe Portfolio (creative work), Wix, Squarespace.</li>
+          <li>Personal blogs/websites or just a quick PPT/PDF to distribute.</li>
         </ul>
       </SectionCard>
 
       {/* Self-Reflection */}
       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 04)">
         <p>
-          Working on my portfolio made me see my progress more clearly and reminded me of skills I had forgotten about.
-          I plan to keep a large master archive and then design targeted versions for different jobs or courses. Using
-          the “What – So what – Now what” approach, I will add a short reflection after each major project. My next
-          steps are to upload my latest work, link each item to PEAKS, and prepare a clean cover page and contents so
-          that my portfolio looks ready for both assessment and real interviews.
+          The portfolio allowed me to more clearly see my progress and reminded me about some forgotten skills. I will maintain one big master file and create specific ones depending on various jobs or courses. I am going to include a brief reflection after each big project with the help of the What -So what -Now what approach. The next thing I am going to do is to post my recent work, attach every possible thing to PEAKS and create a clean cover page and contents to make my portfolio look like it is going to an assessment and real interviews.
         </p>
       </SectionCard>
     </div>

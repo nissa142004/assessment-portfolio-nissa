@@ -1,295 +1,333 @@
-// src/pages/chapter/Chapter11.jsx
-// Email & Online Etiquette – dark glass, reorganised, simple English.
+// // src/pages/chapter/Chapter11.jsx
+// // Telephone Etiquette & Customer Service – dark glass, reorganised.
 
-import React from "react";
+// import React from "react";
 
-const chips = [
-  "Why etiquette",
-  "Subject lines",
-  "Greetings & closings",
-  "Confidential info",
-  "Tone & grammar",
-  "Reply / Reply all",
-  "Online & social media",
-  "Self-reflection",
-];
+// const chips = [
+//   "First impressions",
+//   "Answering calls",
+//   "Holding & transfers",
+//   "Messages & callbacks",
+//   "Professional language",
+//   "Handling complaints",
+//   "Customer service mindset",
+//   "Self-reflection",
+// ];
 
-function Chip({ label }) {
-  return (
-    <span className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm font-medium border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
-      <span className="h-2 w-2 rounded-full bg-emerald-400" />
-      {label}
-    </span>
-  );
-}
+// function Chip({ label }) {
+//   return (
+//     <span className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm font-medium border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+//       <span className="h-2 w-2 rounded-full bg-emerald-400" />
+//       {label}
+//     </span>
+//   );
+// }
 
-function SectionCard({ title, tone = "emerald", children }) {
-  const tones = {
-    emerald: {
-      wrap: "border-emerald-500/40 bg-emerald-950/40",
-      title: "text-emerald-100",
-    },
-    cyan: {
-      wrap: "border-cyan-500/40 bg-cyan-950/40",
-      title: "text-cyan-100",
-    },
-    amber: {
-      wrap: "border-amber-500/40 bg-amber-950/40",
-      title: "text-amber-100",
-    },
-    slate: {
-      wrap: "border-slate-600/60 bg-slate-950/60",
-      title: "text-slate-100",
-    },
-    violet: {
-      wrap: "border-violet-500/40 bg-violet-950/40",
-      title: "text-violet-100",
-    },
-  };
-  const t = tones[tone] || tones.slate;
+// function SectionCard({ title, tone = "emerald", children }) {
+//   const tones = {
+//     emerald: {
+//       wrap: "border-emerald-500/40 bg-emerald-950/40",
+//       title: "text-emerald-100",
+//     },
+//     cyan: {
+//       wrap: "border-cyan-500/40 bg-cyan-950/40",
+//       title: "text-cyan-100",
+//     },
+//     amber: {
+//       wrap: "border-amber-500/40 bg-amber-950/40",
+//       title: "text-amber-100",
+//     },
+//     slate: {
+//       wrap: "border-slate-600/60 bg-slate-950/60",
+//       title: "text-slate-100",
+//     },
+//     violet: {
+//       wrap: "border-violet-500/40 bg-violet-950/40",
+//       title: "text-violet-100",
+//     },
+//   };
+//   const t = tones[tone] || tones.slate;
 
-  return (
-    <div
-      className={`rounded-2xl border ${t.wrap} p-5 md:p-6 backdrop-blur-xl shadow-lg shadow-black/40`}
-    >
-      <h3 className={`text-lg md:text-xl font-bold mb-3 ${t.title}`}>{title}</h3>
-      <div className="text-slate-100/90 leading-7 text-sm md:text-base">
-        {children}
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div
+//       className={`rounded-2xl border ${t.wrap} p-5 md:p-6 backdrop-blur-xl shadow-lg shadow-black/40`}
+//     >
+//       <h3 className={`text-lg md:text-xl font-bold mb-3 ${t.title}`}>{title}</h3>
+//       <div className="text-slate-100/90 leading-7 text-sm md:text-base">
+//         {children}
+//       </div>
+//     </div>
+//   );
+// }
 
-export default function Chapter11Section() {
-  return (
-    <div className="max-w-5xl mx-auto px-4 py-8 text-slate-100">
-      {/* Header */}
-      <header className="mb-6 md:mb-8">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
-          <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">
-              Chapter 11
-            </p>
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-50">
-              Email & Online Etiquette
-            </h1>
-            <p className="mt-2 text-slate-300 max-w-2xl">
-              This lesson covered the basic rules for writing professional
-              emails and behaving wisely online. It showed how even one careless
-              message or post can affect our studies, career and long–term
-              reputation.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {chips.map((c) => (
-              <Chip key={c} label={c} />
-            ))}
-          </div>
-        </div>
-      </header>
+// export default function Chapter11Section() {
+//   return (
+//     <div className="max-w-5xl mx-auto px-4 py-8 text-slate-100">
+//       {/* Header */}
+//       <header className="mb-6 md:mb-8">
+//         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+//           <div>
+//             <p className="text-xs uppercase tracking-wide text-slate-400">
+//               Chapter 11
+//             </p>
+//             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-50">
+//               Telephone Etiquette & Customer Service
+//             </h1>
+//             <p className="mt-2 text-slate-300 max-w-2xl">
+//               A single phone call can build or damage the image of an
+//               organisation. This chapter walks through how to answer, handle and
+//               end calls in a polite, organised and customer-focused way.
+//             </p>
+//           </div>
+//           <div className="flex flex-wrap gap-2">
+//             {chips.map((c) => (
+//               <Chip key={c} label={c} />
+//             ))}
+//           </div>
+//         </div>
+//       </header>
 
-      {/* PART 1 – WHY ETIQUETTE & DIGITAL IMAGE */}
-      <div className="grid md:grid-cols-2 gap-4 mb-6">
-        <SectionCard tone="cyan" title="Why email & online etiquette matter">
-          <p className="text-sm">
-            Etiquette means the expected rules of behaviour in a given time and
-            place. In email and online spaces, people often see our words
-            <span className="font-semibold"> before they meet us in person</span>.
-            Lecturers, employers and team-mates form opinions from how we write
-            and what we share. Good etiquette shows that we are respectful,
-            mature and ready for the workplace.
-          </p>
-        </SectionCard>
+//       {/* PART 1 – FIRST IMPRESSION & MINDSET */}
+//       <div className="grid md:grid-cols-2 gap-4 mb-6">
+//         <SectionCard tone="cyan" title="Why telephone behaviour matters">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               For many customers, the phone is the{" "}
+//               <span className="font-semibold">first contact</span> with a
+//               company.
+//             </li>
+//             <li>
+//               In a few seconds, callers decide if we sound friendly, organised
+//               and ready to help.
+//             </li>
+//             <li>
+//               Good manners and clear support can turn a casual caller into a
+//               loyal customer; weak etiquette often makes them look elsewhere.
+//             </li>
+//           </ul>
+//         </SectionCard>
 
-        <SectionCard tone="slate" title="Your digital first impression">
-          <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>
-              Emails, posts and comments can be saved, screenshotted and
-              forwarded.
-            </li>
-            <li>
-              A single unprofessional message can damage trust with lecturers or
-              future managers.
-            </li>
-            <li>
-              A clear, polite email or post, on the other hand, can build a
-              strong, professional image.
-            </li>
-          </ul>
-        </SectionCard>
-      </div>
+//         <SectionCard tone="emerald" title="Professional attitude on the phone">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               Answer with a relaxed smile – it naturally makes your voice sound
+//               warmer.
+//             </li>
+//             <li>
+//               Sit upright and avoid eating, drinking or chewing gum during the
+//               call.
+//             </li>
+//             <li>
+//               Give the caller your full attention instead of focusing on other
+//               screens or side conversations.
+//             </li>
+//             <li>
+//               Remember that every call shapes how people see the organisation you
+//               represent.
+//             </li>
+//           </ul>
+//         </SectionCard>
+//       </div>
 
-      {/* PART 2 – 7 BASIC EMAIL RULES */}
-      <SectionCard tone="emerald" title="Seven basic rules for professional email">
-        <ul className="list-disc pl-5 space-y-1 text-sm">
-          <li>
-            <span className="font-semibold">Always include a subject</span> and
-            use the person’s name and correct title in the greeting.
-          </li>
-          <li>
-            <span className="font-semibold">Avoid writing in ALL CAPITALS</span>;
-            it looks like shouting and feels aggressive.
-          </li>
-          <li>
-            <span className="font-semibold">
-              Do not send confidential information
-            </span>{" "}
-            such as bank details, ID numbers or medical data.
-          </li>
-          <li>
-            <span className="font-semibold">
-              Use abbreviations and emoticons carefully
-            </span>{" "}
-            – they may be misunderstood and look unprofessional in formal emails.
-          </li>
-          <li>
-            <span className="font-semibold">THINK before sending</span>: could
-            this email hurt, embarrass or offend someone if they read it later?
-          </li>
-          <li>
-            <span className="font-semibold">Keep grammar and spelling correct</span>;
-            email is not the same as a quick text message.
-          </li>
-          <li>
-            <span className="font-semibold">
-              Avoid forwarding unnecessary emails
-            </span>{" "}
-            and chain messages that waste other people’s time.
-          </li>
-        </ul>
-      </SectionCard>
+//       {/* PART 2 – ANSWERING, GREETING & ATTENTION */}
+//       <div className="grid md:grid-cols-2 gap-4 mb-6">
+//         <SectionCard tone="amber" title="Answering & greeting correctly">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               Try to answer the phone within{" "}
+//               <span className="font-semibold">three rings</span> when possible.
+//             </li>
+//             <li>
+//               Use a simple pattern: greeting + organisation + your name + offer
+//               of help.
+//               <br />
+//               <span className="italic text-slate-200/90">
+//                 “Good morning, SLIIT City Uni support desk, this is Senal. How
+//                 may I help you?”
+//               </span>
+//             </li>
+//             <li>
+//               Speak clearly into the mouthpiece or headset, not too loud and not
+//               too soft.
+//             </li>
+//           </ul>
+//         </SectionCard>
 
-      {/* PART 3 – STRUCTURE + TONE & ADDRESS */}
-      <div className="grid md:grid-cols-2 gap-4 my-6">
-        <SectionCard tone="slate" title="Professional email structure (simple template)">
-          <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>
-              <span className="font-semibold">To:</span> use the correct email
-              address of the person you are writing to.
-            </li>
-            <li>
-              <span className="font-semibold">Subject line:</span> short phrase
-              that clearly summarises the main purpose.
-            </li>
-            <li>
-              <span className="font-semibold">Greeting:</span> formal greetings
-              such as “Dear Ms./Mr./Dr. …” in academic and work emails.
-            </li>
-            <li>
-              <span className="font-semibold">Body:</span> clear paragraphs,
-              full sentences, no slang or angry language.
-            </li>
-            <li>
-              <span className="font-semibold">Closing:</span> “Best regards,”
-              “Kind regards,” “Sincerely,” and similar phrases.
-            </li>
-            <li>
-              <span className="font-semibold">Signature:</span> your full name
-              and, if needed, course, phone number and a professional email
-              address.
-            </li>
-          </ul>
-        </SectionCard>
+//         <SectionCard tone="slate" title="Staying fully present on the call">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               Avoid chatting with co-workers while the caller is on the line; if
+//               you must check something, use the hold function and explain.
+//             </li>
+//             <li>
+//               Keep a small notepad or message pad near you to record names,
+//               numbers and key details.
+//             </li>
+//             <li>
+//               Listen without interrupting, then summarise to confirm:
+//               <span className="italic"> “So what I’m hearing is…”</span>
+//             </li>
+//           </ul>
+//         </SectionCard>
+//       </div>
 
-        <SectionCard tone="amber" title="Tone, address and checks before you send">
-          <div className="space-y-3">
-            <div>
-              <h4 className="font-semibold mb-1 text-sm">Tone & address</h4>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
-                <li>
-                  Use a professional email ID (for example{" "}
-                  <span className="italic">
-                    firstname.lastname@gmail.com
-                  </span>
-                  ), not a funny nickname.
-                </li>
-                <li>
-                  Be polite and respectful – ask for help instead of demanding.
-                </li>
-                <li>
-                  In formal emails, avoid lots of exclamation marks and emotional
-                  language.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-1 text-sm">Before pressing “Send”</h4>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
-                <li>
-                  Run spell-check and read the email once more from top to
-                  bottom.
-                </li>
-                <li>
-                  Check that the subject, greeting, closing and attachments are
-                  all correct.
-                </li>
-                <li>
-                  Make sure you chose{" "}
-                  <span className="font-semibold">“Reply”</span> or{" "}
-                  <span className="font-semibold">“Reply all”</span> correctly.
-                </li>
-                <li>
-                  If you wrote the email while feeling angry, save it, take a
-                  break and read it again later before sending.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </SectionCard>
-      </div>
+//       {/* PART 3 – HOLD, TRANSFERS, MESSAGES & CALLBACKS */}
+//       <div className="grid md:grid-cols-2 gap-4 mb-6">
+//         <SectionCard tone="violet" title="Putting callers on hold & transfers">
+//           <ol className="list-decimal pl-5 space-y-1 text-sm">
+//             <li>
+//               Ask first: “May I put you on hold for a moment while I check that
+//               for you?”
+//             </li>
+//             <li>
+//               Wait for their answer before pressing the hold button. Do not drop
+//               them into hold without warning.
+//             </li>
+//             <li>
+//               Check back every 30–45 seconds, thank them for waiting and offer
+//               choices: continue holding, receive a call-back, or leave a message.
+//             </li>
+//           </ol>
+//           <ol className="list-decimal pl-5 space-y-1 text-sm mt-3">
+//             <li>
+//               When transferring, briefly explain the reason:
+//               <span className="italic">
+//                 {" "}
+//                 “I’ll transfer you to our finance desk who can access your
+//                 account.”
+//               </span>
+//             </li>
+//             <li>
+//               If possible, speak to the next person first, confirm they can take
+//               the call and share the caller’s name and issue.
+//             </li>
+//             <li>
+//               Tell the caller who they are going to (name and extension) in case
+//               the line disconnects.
+//             </li>
+//           </ol>
+//         </SectionCard>
 
-      {/* PART 4 – ONLINE / CLASSROOM & SOCIAL MEDIA */}
-      <div className="grid md:grid-cols-2 gap-4 my-6">
-        <SectionCard tone="cyan" title="Online classroom & office etiquette">
-          <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>
-              Use respectful language in chats, forums and group emails – as if
-              you are speaking in front of the class.
-            </li>
-            <li>
-              Do not spam academic or work group chats with memes or unrelated
-              messages.
-            </li>
-            <li>
-              In online meetings, follow camera and microphone rules; avoid
-              multitasking and side conversations.
-            </li>
-          </ul>
-        </SectionCard>
+//         <SectionCard tone="amber" title="Messages, callbacks & voicemail">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               Use a message pad so you don’t forget details when someone is
+//               unavailable.
+//             </li>
+//             <li>
+//               Record: who the message is for, caller’s name, organisation, phone
+//               number, date/time and a short, clear message.
+//             </li>
+//             <li>
+//               Mark the required action – for example “Please call”, “Will call
+//               back” or “Urgent”.
+//             </li>
+//             <li>
+//               Read back names and numbers to confirm spelling and digits.
+//             </li>
+//           </ul>
+//           <ul className="list-disc pl-5 space-y-1 text-sm mt-3">
+//             <li>
+//               Try to return calls within one working day whenever possible.
+//             </li>
+//             <li>
+//               When leaving voicemail, say your name, department, phone number,
+//               brief reason for calling and the best time to reach you.
+//             </li>
+//             <li>
+//               Keep the message short and clear so it is easy for them to call you
+//               back.
+//             </li>
+//           </ul>
+//         </SectionCard>
+//       </div>
 
-        <SectionCard tone="violet" title="Social media & your digital footprint">
-          <ul className="list-disc pl-5 space-y-1 text-sm">
-            <li>
-              Universities and employers may look at public social media before
-              offering scholarships, internships or jobs.
-            </li>
-            <li>
-              Inappropriate photos, posts or comments can harm your reputation or
-              even cost you an opportunity.
-            </li>
-            <li>
-              Use social media to build a positive personal brand – share
-              projects, achievements and interests in a responsible way.
-            </li>
-          </ul>
-        </SectionCard>
-      </div>
+//       {/* PART 4 – LANGUAGE & TONE */}
+//       <SectionCard tone="slate" title="Professional telephone language">
+//         <div className="grid md:grid-cols-2 gap-4">
+//           <div>
+//             <h4 className="font-semibold mb-1 text-sm">Helpful phrases to use</h4>
+//             <ul className="list-disc pl-5 space-y-1 text-sm">
+//               <li>“How may I help you today?”</li>
+//               <li>“May I put you on hold for a moment?”</li>
+//               <li>“Let me check that for you.”</li>
+//               <li>“Thank you for waiting.”</li>
+//               <li>“I understand your concern.”</li>
+//             </ul>
+//           </div>
+//           <div>
+//             <h4 className="font-semibold mb-1 text-sm">Phrases and tones to avoid</h4>
+//             <ul className="list-disc pl-5 space-y-1 text-sm">
+//               <li>“Hang on.” / “What?” / “Yeah…?” in a rough tone.</li>
+//               <li>“That’s not my job.”</li>
+//               <li>“You have to…” or “Why didn’t you…?” in a blaming way.</li>
+//               <li>“It’s your problem.”</li>
+//               <li>Slang, sarcasm or a bored, uninterested voice.</li>
+//             </ul>
+//           </div>
+//         </div>
+//       </SectionCard>
 
-      {/* Self-reflection */}
-      <SectionCard tone="emerald" title="My Self-Reflection (Chapter 11)">
-        <p className="text-sm">
-          From this session I understood that email and online posts are not
-          private chats that disappear – they can be saved and read again in the
-          future. Earlier I did not always pay attention to subject lines,
-          greetings or how my tone might sound to a lecturer or manager. Now I
-          see that a single careless email or social media post can affect my
-          relationships with lecturers, friends and future employers. Going
-          forward, I plan to use clear subjects, formal greetings and proper
-          grammar in academic and work emails. Before I send or post anything, I
-          want to pause and ask myself whether I would be comfortable if a
-          lecturer, manager or parent read it later.
-        </p>
-      </SectionCard>
-    </div>
-  );
-}
+//       {/* PART 5 – DIFFICULT CALLERS & SERVICE MINDSET */}
+//       <div className="grid md:grid-cols-2 gap-4 my-6">
+//         <SectionCard tone="emerald" title="Handling angry or upset callers">
+//           <ol className="list-decimal pl-5 space-y-1 text-sm">
+//             <li>Stay calm and let them talk without interrupting at first.</li>
+//             <li>
+//               Show empathy: “I’m sorry this happened; let’s see what we can do
+//               about it.”
+//             </li>
+//             <li>
+//               Take notes and repeat back the main points so they know you have
+//               understood.
+//             </li>
+//             <li>
+//               Focus on possible solutions and next steps instead of blaming other
+//               staff or departments.
+//             </li>
+//             <li>
+//               If you need help, clearly explain what you will do and who you will
+//               contact on their behalf.
+//             </li>
+//           </ol>
+//         </SectionCard>
+
+//         <SectionCard tone="violet" title="Customer service mindset on the phone">
+//           <ul className="list-disc pl-5 space-y-1 text-sm">
+//             <li>
+//               Try to go one step further – do not just transfer; guide or solve
+//               as much as you can.
+//             </li>
+//             <li>
+//               Treat every caller as important, even if the question is very
+//               simple.
+//             </li>
+//             <li>
+//               If you do not know something, be honest, then promise to find out
+//               and call back.
+//             </li>
+//             <li>
+//               End with a positive closing: “Thank you for calling, have a nice
+//               day.”
+//             </li>
+//           </ul>
+//         </SectionCard>
+//       </div>
+
+//       {/* Self-reflection */}
+//       <SectionCard tone="emerald" title="My Self-Reflection (Chapter 11)">
+//         <p className="text-sm">
+//           This lesson changed how I think about phone calls. Earlier I picked up
+//           the phone without paying much attention to my tone, greeting or follow
+//           up. Now I realise that the caller forms a picture of me and my
+//           organisation in the first few seconds. I learned concrete habits such
+//           as asking before putting someone on hold, using respectful phrases
+//           instead of blaming language, and taking complete, accurate messages. In
+//           my future work I want to practise smiling before I answer, listening
+//           fully, and closing each call with a clear action plan and a polite
+//           thank you so that callers feel respected and well supported.
+//         </p>
+//       </SectionCard>
+//     </div>
+//   );
+// }
