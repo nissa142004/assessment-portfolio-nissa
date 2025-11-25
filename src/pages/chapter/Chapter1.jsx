@@ -211,7 +211,7 @@ export default function Chapter1Section() {
               This made me aware of the fact that I already apply most of these
               skills in my day to day life, not just in my future career.
             </p>
-            <p>Students talking about professional competencies in the classroom.</p>
+            <p>Students talked about professional competencies in the classroom.</p>
           </div>
 
           <div className="flex items-center justify-center">
@@ -273,7 +273,7 @@ export default function Chapter1Section() {
               <ul className="list-disc pl-5 space-y-1 text-sm text-slate-100/90">
                 <li>Positive attitude, Tolerance, Open-mindedness.</li>
                 <li>Confidence, Empathy</li>
-                <li>Avoid: prejudice, cynicism</li>
+              
               </ul>
             </div>
 
