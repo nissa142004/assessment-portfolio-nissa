@@ -8,7 +8,7 @@ import Chapter6Section from "./pages/chapter/Chapter6.jsx";
 import Chapter7Section from "./pages/chapter/Chapter7.jsx";
 import Chapter8Section from "./pages/chapter/Chapter8.jsx";
 import Chapter9Section from "./pages/chapter/Chapter9.jsx";
-import Chapter10Section from "./pages/chapter/Chapter10.jsx";
+// import Chapter10Section from "./pages/chapter/Chapter10.jsx";
 // import Chapter11Section from "./pages/chapter/Chapter11.jsx";
 
 // 🌑 Dark transparent theme + Top Navigation Layout
@@ -24,7 +24,7 @@ export default function AssessmentPortfolio() {
       { id: "ch7", title: "Food Festival – Ralahami Kadée", body: "/" },
       { id: "ch8", title: "Emotional Intelligence (EI)", body: "/" },
       { id: "ch9", title: "Dining Etiquette & Table Manners", body: "/" },
-      { id: "ch10", title: "Email & Online Etiquette", body: "Professional behaviour in formal settings." },
+      // { id: "ch10", title: "Email & Online Etiquette", body: "Professional behaviour in formal settings." },
       // { id: "ch11", title: "Research Writing", body: "Plagiarism-free writing, citations, sources." },
     ],
     []
@@ -213,13 +213,13 @@ export default function AssessmentPortfolio() {
             );
           }
 
-          if (c.id === "ch10") {
-            return (
-              <article key="ch10" id="ch10" ref={setRef} className={cardClasses}>
-                <Chapter10Section />
-              </article>
-            );
-          }
+          // if (c.id === "ch10") {
+          //   return (
+          //     <article key="ch10" id="ch10" ref={setRef} className={cardClasses}>
+          //       <Chapter10Section />
+          //     </article>
+          //   );
+          // }
 
           // if (c.id === "ch11") {
           //   return (
